@@ -1,6 +1,19 @@
 <template>
   <div class="nav-bar">
-    <router-link :to="{ name: 'Home' }"><b>Arielle Bishop</b></router-link>
+    <span>
+      <span class="nav-bar__logo">
+        <router-link :to="{ name: 'Home' }">Arielle Bishop</router-link>
+      </span>
+      <span>
+        <router-link :to="{ name: '2D' }">2D</router-link>
+        <router-link :to="{ name: '3D' }">3D</router-link>
+        <router-link :to="{ name: 'Video' }">Video</router-link>
+        <router-link :to="{ name: 'Programming' }">Programming</router-link>
+      </span>
+    </span>
+    <span>
+      <router-link :to="{ name: 'Contact' }">Contact</router-link>
+    </span>
   </div>
 </template>
 
@@ -14,13 +27,19 @@
   .nav-bar {
     background-color: #303030;
     height: 4rem;
+    font-size: 18px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .nav-bar a {
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
+    padding: 0 2rem;
+  }
+  .nav-bar__logo {
+    font-weight: bolder;
+    border-right: 1px solid #DDDDDD;
   }
 </style>

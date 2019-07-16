@@ -1,9 +1,9 @@
 <template>
-  <h1>Home Page</h1>
+  <h1>2D Creations here</h1>
 </template>
 
 <script>
   export default {
-    name: "Home"
+    name: '2D'
   }
 </script>
