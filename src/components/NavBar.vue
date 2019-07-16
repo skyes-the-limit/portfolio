@@ -12,7 +12,7 @@
       </span>
     </span>
     <span>
-      <router-link :to="{ name: 'Contact' }">Contact</router-link>
+      <router-link :to="{ name: 'About' }">About</router-link>
     </span>
   </div>
 </template>
