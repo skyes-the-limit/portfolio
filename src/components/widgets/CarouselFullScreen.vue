@@ -8,13 +8,13 @@
       </template>
     </div>
     <div class="carousel__track">
-      <li v-for="slide in slides" class="carousel__slide">
+      <li v-for="slide in slides" class="carousel__slide"
+          :style="{ backgroundImage: 'url(' + require(slide.imageSrc) + ')' }">
         <router-link :to="{name: slide.title}">{{ slide.title }}</router-link>
       </li>
     </div>
     <div class="carousel__indicators">
-      <label v-for="slide in slides" class="carousel__indicator" :for="slide.title"
-             v-bind:style="{ backgroundImage: 'url(' + slide.imageSrc + ')' }"></label>
+      <label v-for="slide in slides" class="carousel__indicator" :for="slide.title"></label>
     </div>
   </div>
 </template>
@@ -49,6 +49,10 @@
   .carousel__controls,
   .carousel__activator {
     display: none;
+  }
+  .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
   }
   .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
     -webkit-transform: translateX(0%);
@@ -108,6 +112,26 @@
     opacity: 1;
   }
   .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+    opacity: 1;
+  }
+  .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+  .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+    display: block;
+    opacity: 1;
+  }
+  .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
     opacity: 1;
   }
   .carousel__control {
@@ -183,6 +207,10 @@
     -webkit-transform: translateX(200%);
     transform: translateX(200%);
   }
+  .carousel__track .carousel__slide:nth-of-type(4) {
+    -webkit-transform: translateX(300%);
+    transform: translateX(300%);
+  }
   .carousel--scale .carousel__slide {
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -226,8 +254,7 @@
     text-align: center;
     margin-top: -25px;
   }
-  h2,
-  h3 {
+  h2, h3 {
     color: #fafafa;
   }
   h3 {
@@ -238,7 +265,6 @@
   }
   .carousel__slide:nth-of-type(1),
   .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-    background-image: url('../../assets/images/1_XZrU5omVCZPZXuYv2AZnog.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -249,6 +275,11 @@
   }
   .carousel__slide:nth-of-type(3),
   .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel__slide:nth-of-type(4),
+  .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(4) {
     background-size: cover;
     background-position: center;
   }
