@@ -1,25 +1,25 @@
 <template>
-  <carousel-full-screen v-bind:slides="carouselProps"/>
+  <carousel-full-screen :slides="carouselProps" />
 </template>
 
 <script>
-import CarouselFullScreen from './widgets/CarouselFullScreen.vue'
+import CarouselFullScreen from 'widgets/CarouselFullScreen.vue'
 
 let TwoD = {
-    title: '2D',
-    imageSrc: '../../assets/images/2d.jpg'
+  title: '2D',
+  imageSrc: 'https://parkwestgallery-104d1.kxcdn.com/wp-content/uploads/2017/06/person-woman-art-creative-1.jpg'
 };
 let ThreeD = {
   title: '3D',
-  imageSrc: '../../assets/images/3d/jpg'
+  imageSrc: 'http://static1.squarespace.com/static/5320f582e4b0fd524adcad9c/5321b29be4b0410adbe0c3bd/5787d6be46c3c42dc371bc27/1468605912448/3d+modelling.JPG?format=1500w'
 };
 let Video = {
   title: 'Video',
-  imageSrc: '../../assets/images/video.jpg'
+  imageSrc: 'https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-lighting-technique.jpg?itok=XtlXHbnN'
 };
 let Programming = {
   title: 'Programming',
-  imageSrc: '../../assets/images/programming.jpeg'
+  imageSrc: 'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1106530967%2F960x0.jpg%3Ffit%3Dscale'
 };
 
 export default {

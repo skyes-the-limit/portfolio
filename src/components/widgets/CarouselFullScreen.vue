@@ -1,20 +1,41 @@
 <template>
   <div class="carousel carousel--translate">
-    <input v-for="slide in slides" class="carousel__activator" type="radio" name="carousel" :id="slide.title" />
-    <div v-for="slideMain in slides" class="carousel__controls">
+    <input
+      v-for="slide in slides"
+      :id="slide.title"
+      class="carousel__activator"
+      type="radio"
+      name="carousel"
+    >
+    <div
+      v-for="slideMain in slides"
+      class="carousel__controls"
+    >
       <template v-for="slideOther in slides">
-        <label v-if="slideMain !== slideOther" :for="slideOther.title"
-               class="carousel__control carousel__control--backward" ></label>
+        <label
+          v-if="slideMain !== slideOther"
+          :for="slideOther.title"
+          class="carousel__control carousel__control--backward"
+        />
       </template>
     </div>
     <div class="carousel__track">
-      <li v-for="slide in slides" class="carousel__slide"
-          :style="{ backgroundImage: 'url(' + require(slide.imageSrc) + ')' }">
-        <router-link :to="{name: slide.title}">{{ slide.title }}</router-link>
+      <li
+        v-for="slide in slides"
+        class="carousel__slide"
+        :style="{ backgroundImage: 'url(' + slide.imageSrc + ')' }"
+      >
+        <router-link :to="{name: slide.title}">
+          {{ slide.title }}
+        </router-link>
       </li>
     </div>
     <div class="carousel__indicators">
-      <label v-for="slide in slides" class="carousel__indicator" :for="slide.title"></label>
+      <label
+        v-for="slide in slides"
+        class="carousel__indicator"
+        :for="slide.title"
+      />
     </div>
   </div>
 </template>

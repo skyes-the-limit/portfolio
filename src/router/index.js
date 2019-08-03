@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '../components/Home';
-import TwoD from '../components/2D';
-import ThreeD from '../components/3D';
-import Video from '../components/Video';
-import Programming from '../components/Programming';
-import About from '../components/About';
+import Home from 'components/Home';
+import TwoD from 'components/2D';
+import ThreeD from 'components/3D';
+import Video from 'components/Video';
+import Programming from 'components/Programming';
+import About from 'components/About';
 
 Vue.use(Router);
 
