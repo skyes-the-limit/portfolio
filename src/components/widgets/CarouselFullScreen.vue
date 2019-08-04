@@ -3,11 +3,11 @@
     <input v-for="(slide, index) in slides" :id="slide.page" :key="slide.page"
            v-model="selectedIndex" :value="index"
            class="carousel__activator" type="radio" name="activator">
-    <div v-for="(slide, index) in slides" :key="index">
+    <div>
       <label class="carousel__control carousel__control--backward"
-             :for="index === 0 ? slides[slides.length - 1].page : slides[index - 1].page" />
+             :for="selectedIndex === 0 ? slides[slides.length - 1].page : slides[selectedIndex - 1].page" />
       <label class="carousel__control carousel__control--forward"
-             :for="index === slides.length - 1 ? slides[0].page : slides[index + 1].page" />
+             :for="selectedIndex === slides.length - 1 ? slides[0].page : slides[selectedIndex + 1].page" />
     </div>
     <li v-for="(slide, index) in slides" :key="slide.imageSrc" class="carousel__slide"
         :style="{
@@ -33,7 +33,7 @@
           return []
         }
       }
-      /*  Expect Array to be Objects with the following fields:
+      /*  Expect slides to be Array of Objects with the following fields:
           * page: String      (page name to route to)
           * title: String,    (title description to display)
           * imageSrc: String  (source for background-image)
