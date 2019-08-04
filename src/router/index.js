@@ -1,51 +1,47 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '../components/Home';
-import TwoD from '../components/2D';
-import ThreeD from '../components/3D';
-import Video from '../components/Video';
-import Programming from '../components/Programming';
-import About from '../components/About';
+import Home from 'components/Home';
+import About from 'components/About';
+import ContentPage from 'widgets/ContentPage';
+import store from 'store';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '',
       name: 'Home',
-      component: Home,
-      children: [
-        {
-          path: '2D',
-          name: '2D',
-          component: TwoD
-        },
-        {
-          path: '3D',
-          name: '3D',
-          component: ThreeD
-        },
-        {
-          path: 'video',
-          name: 'Video',
-          component: Video
-        },
-        {
-          path: 'programming',
-          name: 'Programming',
-          component: Programming
-        },
-        {
-          path: 'About',
-          name: 'About',
-          component: About
-        },
-      ]
+      component: Home
     },
     {
-      path: '',
-      redirect: 'Home'
+      path: '/2D',
+      name: '2D',
+      component: ContentPage,
+      props: store.getters.twoD
+    },
+    {
+      path: '/3D',
+      name: '3D',
+      component: ContentPage,
+      props: store.getters.threeD
+    },
+    {
+      path: '/video',
+      name: 'Video',
+      component: ContentPage,
+      props: store.getters.video
+    },
+    {
+      path: '/programming',
+      name: 'Programming',
+      component: ContentPage,
+      props: store.getters.programming
+    },
+    {
+      path: 'About',
+      name: 'About',
+      component: About
     }
   ]
 })

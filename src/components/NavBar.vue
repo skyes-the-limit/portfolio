@@ -19,14 +19,14 @@
 
 <script>
   export default {
-    name: 'nav-bar'
+    name: 'NavBar'
   }
 </script>
 
 <style scoped lang="scss">
   .nav-bar {
     background-color: #303030;
-    height: 4rem;
+    height: 8vh;
     font-size: 18px;
     display: flex;
     justify-content: space-between;

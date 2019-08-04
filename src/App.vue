@@ -6,22 +6,18 @@
 </template>
 
 <script>
-  import NavBar from './components/NavBar.vue';
-  import router from './router/index.js'
+  import NavBar from 'components/NavBar.vue';
+  import router from 'router/index.js'
 
   export default {
-    name: 'app',
+    name: 'App',
     components: {
       NavBar
     },
-    router
+    router: router
   }
 </script>
 
 <style lang="scss">
-  @import '/assets/css/main.scss';
-
-  .content-container {
-    padding: 1rem 4rem;
-  }
+  @import './assets/css/main.scss';
 </style>
