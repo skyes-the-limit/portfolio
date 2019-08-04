@@ -37,7 +37,7 @@
       }
       /*  Expect slides to be Array of Objects with the following fields:
           * page: String      (page name to route to)
-          * title: String,    (title description to display)
+          * title: String     (title description to display)
           * imageSrc: String  (source for background-image)
       */
     },

@@ -7,7 +7,8 @@ const plugins = [
       "css": "./src/assets/css",
       "components": "./src/components",
       "widgets": "./src/components/widgets",
-      "router": "./src/router"
+      "router": "./src/router",
+      "store": "./src/store"
     }
   }
 ]];

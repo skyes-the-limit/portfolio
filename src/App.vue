@@ -14,7 +14,7 @@
     components: {
       NavBar
     },
-    router
+    router: router
   }
 </script>
 
