@@ -3,7 +3,7 @@
     <input v-for="(slide, index) in slides" :id="slide.page" :key="slide.page"
            v-model="selectedIndex" :value="index"
            class="carousel__activator" type="radio" name="activator">
-    <div>
+    <div v-if="slides.length > 1">
       <label class="carousel__control carousel__control--backward"
              :for="selectedIndex === 0 ? slides[slides.length - 1].page : slides[selectedIndex - 1].page" />
       <label class="carousel__control carousel__control--forward"
@@ -14,7 +14,9 @@
           backgroundImage: 'url(' + slide.imageSrc + ')',
           transform: 'translateX(' + (index - selectedIndex) * 100 + '%)'
         }">
-      <h1>{{ slide.title }}</h1>
+      <router-link :to="{ name: slide.page }">
+        <h1>{{ slide.title }}</h1>
+      </router-link>
     </li>
     <div class="carousel__indicators">
       <label v-for="slide in slides" :key="slide.page"
@@ -195,6 +197,10 @@
     line-height: 50px;
     text-align: center;
     margin: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .carousel__indicator {
