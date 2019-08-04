@@ -1,6 +1,7 @@
 <template>
   <ul class="carousel">
-    <input v-for="(slide, index) in slides" :id="slide.page" :key="slide.page" :checked="index === 0"
+    <input v-for="(slide, index) in slides" :id="slide.page" :key="slide.page"
+           v-model="selectedIndex" :value="index"
            class="carousel__activator" type="radio" name="activator">
     <div v-for="(slide, index) in slides" :key="index">
       <label class="carousel__control carousel__control--backward"
@@ -11,8 +12,7 @@
     <li v-for="(slide, index) in slides" :key="slide.imageSrc" class="carousel__slide"
         :style="{
           backgroundImage: 'url(' + slide.imageSrc + ')',
-          // webkitTransform: 'translateX(' + index * 100 + '%)',
-          // transform: 'translateX(' + index * 100 + '%)'
+          transform: 'translateX(' + (index - selectedIndex) * 100 + '%)'
         }">
       <h1>{{ slide.title }}</h1>
     </li>
@@ -38,12 +38,16 @@
           * title: String,    (title description to display)
           * imageSrc: String  (source for background-image)
       */
+    },
+    data() {
+      return {
+        selectedIndex: 0
+      }
     }
   }
 </script>
 
 <style lang="scss" scoped>
-
   .carousel {
     height: 80vh;
     width: 100vw;
@@ -60,12 +64,9 @@
     display: none;
   }
 
-  .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-  }
+  /* CHECKED -------------------------------------------------------------------------------------------------------- */
 
-  .carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  .carousel__activator:checked ~ .carousel__slide {
     transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
     top: 0;
     left: 0;
@@ -75,86 +76,16 @@
     transform: scale(1);
   }
 
-  .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  .carousel__activator:checked ~ .carousel__controls {
     display: block;
     opacity: 1;
   }
 
-  .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  .carousel__activator:checked ~ .carousel__indicators .carousel__indicator {
     opacity: 1;
   }
 
-  .carousel__activator:nth-of-type(2):checked ~ .carousel__track {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
-
-  .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
-    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
-    display: block;
-    opacity: 1;
-  }
-
-  .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
-    opacity: 1;
-  }
-
-  .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
-    -webkit-transform: translateX(-200%);
-    transform: translateX(-200%);
-  }
-
-  .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
-    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
-    display: block;
-    opacity: 1;
-  }
-
-  .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
-    opacity: 1;
-  }
-
-  .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
-    -webkit-transform: translateX(-300%);
-    transform: translateX(-300%);
-  }
-
-  .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
-    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-
-  .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
-    display: block;
-    opacity: 1;
-  }
-
-  .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
-    opacity: 1;
-  }
+  /* UNCHECKED ------------------------------------------------------------------------------------------------------ */
 
   .carousel__control {
     height: 30px;
@@ -230,26 +161,6 @@
     opacity: 1;
   }
 
-  .carousel__track .carousel__slide:nth-of-type(1) {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-  }
-
-  .carousel__track .carousel__slide:nth-of-type(2) {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-
-  .carousel__track .carousel__slide:nth-of-type(3) {
-    -webkit-transform: translateX(200%);
-    transform: translateX(200%);
-  }
-
-  .carousel__track .carousel__slide:nth-of-type(4) {
-    -webkit-transform: translateX(300%);
-    transform: translateX(300%);
-  }
-
   .carousel--scale .carousel__slide {
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -286,8 +197,8 @@
     background-color: #fafafa;
   }
 
-  .carousel__slide:nth-of-type(n),
-  .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(n) {
+  .carousel__slide,
+  .carousel--thumb .carousel__indicators .carousel__indicator {
     background-size: cover;
     background-position: center;
   }
