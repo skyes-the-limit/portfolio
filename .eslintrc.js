@@ -43,7 +43,8 @@ module.exports = exports = {
   },
   "rules": {
     "no-console": OFF,
-    "max-attributes-per-line": OFF,
-    "html-closing-bracket-newline": OFF
+    "vue/max-attributes-per-line": OFF,
+    "vue/html-closing-bracket-newline": OFF,
+    "vue/singleline-html-element-content-newline": OFF
   }
 };
