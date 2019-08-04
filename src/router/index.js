@@ -15,16 +15,16 @@ export default new Router({
       component: Home
     },
     {
-      path: '/2D',
-      name: '2D',
+      path: '/illustration',
+      name: 'Illustration',
       component: ContentPage,
-      props: store.getters.twoD
+      props: store.getters.illustration
     },
     {
-      path: '/3D',
-      name: '3D',
+      path: '/animation',
+      name: 'Animation',
       component: ContentPage,
-      props: store.getters.threeD
+      props: store.getters.animation
     },
     {
       path: '/video',

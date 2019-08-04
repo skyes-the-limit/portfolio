@@ -5,8 +5,8 @@
         <router-link :to="{ name: 'Home' }">Arielle Bishop</router-link>
       </span>
       <span>
-        <router-link :to="{ name: '2D' }">2D</router-link>
-        <router-link :to="{ name: '3D' }">3D</router-link>
+        <router-link :to="{ name: 'Illustration' }">Illustration</router-link>
+        <router-link :to="{ name: 'Animation' }">Animation</router-link>
         <router-link :to="{ name: 'Video' }">Video</router-link>
         <router-link :to="{ name: 'Programming' }">Programming</router-link>
       </span>
