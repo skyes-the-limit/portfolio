@@ -49,7 +49,7 @@
 
 <style lang="scss" scoped>
   .carousel {
-    height: 80vh;
+    height: 92vh;
     width: 100vw;
     margin: 0;
     overflow: hidden;
@@ -179,6 +179,9 @@
 
   .carousel__slide {
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .carousel--thumb .carousel__indicator {
@@ -191,6 +194,7 @@
     font-size: 50px;
     line-height: 50px;
     text-align: center;
+    margin: 0;
   }
 
   .carousel__indicator {
