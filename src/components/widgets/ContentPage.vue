@@ -2,15 +2,12 @@
   <div class="content-container">
     <div v-for="(row, index) in rows" :key="index" class="preview-row">
       <preview-card v-for="card in row" :key="card.date" :content="card" />
-
     </div>
   </div>
 </template>
 
 <script>
   import PreviewCard from 'widgets/PreviewCard';
-
-  // route to current page/ index as id, router can fetch index from base to render
 
   export default {
     name: "ContentPage",
@@ -46,7 +43,6 @@
           }
         }
 
-        console.log(out);
         return out;
       }
     }
