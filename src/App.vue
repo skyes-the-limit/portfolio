@@ -8,8 +8,8 @@
 <script>
   import Vue from 'vue'
   import VueVimeoPlayer from 'vue-vimeo-player'
-  import NavBar from 'components/NavBar.vue';
-  import router from 'router/index.js'
+  import NavBar from '@/components/NavBar.vue';
+  import router from '@/router/index.js'
 
   Vue.use(VueVimeoPlayer);
 
@@ -23,5 +23,5 @@
 </script>
 
 <style lang="scss">
-  @import './assets/css/main.scss';
+  @import 'main';
 </style>

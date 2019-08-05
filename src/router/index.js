@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from 'components/Home';
-import About from 'components/About';
-import ContentPage from 'widgets/ContentPage';
-import store from 'store';
+import Home from '@/components/Home';
+import About from '@/components/About';
+import ContentPage from '@/components/widgets/ContentPage';
+import store from '@/store';
 
 Vue.use(Router);
 

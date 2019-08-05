@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import CarouselFullScreen from 'widgets/CarouselFullScreen.vue'
+import CarouselFullScreen from '@/components/widgets/CarouselFullScreen.vue'
 
 let illustration = {
   page: 'Illustration',

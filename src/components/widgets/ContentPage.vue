@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import PreviewCard from 'widgets/PreviewCard';
+  import PreviewCard from '@/components/widgets/PreviewCard';
 
   export default {
     name: "ContentPage",
