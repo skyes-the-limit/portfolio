@@ -19,20 +19,20 @@ const illustration = [
   }
 ];
 const animation = [];
-const video = [];
+const videography = [];
 const programming = [];
 
 export default new Vuex.Store({
   state: {
     illustration: illustration,
     animation: animation,
-    video: video,
+    videography: videography,
     programming: programming
   },
   getters: {
     illustration: state => state.illustration,
     animation: state => state.animation,
-    video: state => state.video,
+    videography: state => state.videography,
     programming: state => state.programming
   }
 });

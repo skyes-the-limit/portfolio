@@ -27,10 +27,10 @@ export default new Router({
       props: store.getters.animation
     },
     {
-      path: '/video',
-      name: 'Video',
+      path: '/videography',
+      name: 'Videography',
       component: ContentPage,
-      props: store.getters.video
+      props: store.getters.videography
     },
     {
       path: '/programming',

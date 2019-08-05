@@ -15,8 +15,8 @@ let animation = {
   title: "3D Modeling & Animation",
   imageSrc: 'http://static1.squarespace.com/static/5320f582e4b0fd524adcad9c/5321b29be4b0410adbe0c3bd/5787d6be46c3c42dc371bc27/1468605912448/3d+modelling.JPG?format=1500w'
 };
-let video = {
-  page: 'Video',
+let videography = {
+  page: 'Videography',
   title: "Videography & Performance Art",
   imageSrc: 'https://nofilmschool.com/sites/default/files/styles/article_wide/public/film-lighting-technique.jpg?itok=XtlXHbnN'
 };
@@ -31,7 +31,7 @@ export default {
   components: { CarouselFullScreen },
   data() {
     return {
-      carouselProps: [illustration, animation, video, programming]
+      carouselProps: [illustration, animation, videography, programming]
     }
   }
 }

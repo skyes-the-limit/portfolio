@@ -7,7 +7,7 @@
       <span>
         <router-link :to="{ name: 'Illustration' }">Illustration</router-link>
         <router-link :to="{ name: 'Animation' }">Animation</router-link>
-        <router-link :to="{ name: 'Video' }">Video</router-link>
+        <router-link :to="{ name: 'Videography' }">Videography</router-link>
         <router-link :to="{ name: 'Programming' }">Programming</router-link>
       </span>
     </span>
