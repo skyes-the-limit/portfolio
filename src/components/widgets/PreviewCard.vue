@@ -1,6 +1,9 @@
 <template>
-  <div>
+  <div class="preview-card">
     <img :src="content.sources[0]">
+    <p>{{ content.date }}</p>
+    <p>{{ content.medium }}</p>
+    <small>{{ content.description }}</small>
   </div>
 </template>
 
@@ -32,7 +35,11 @@
 <style scoped>
   img {
     width: 20vw;
-    height: 20vh;
+    height: 20vw;
     object-fit: cover;
   }
+.preview-card {
+  display: inline;
+  margin: 4vw 0 0 0;
+}
 </style>

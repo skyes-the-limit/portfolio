@@ -1,9 +1,8 @@
 <template>
-  <div>
-    <div v-for="(row, index) in rows" :key="index">
-      <div v-for="card in row" :key="card.date">
-        <preview-card :content="card" />
-      </div>
+  <div class="content-container">
+    <div v-for="(row, index) in rows" :key="index" class="preview-row">
+      <preview-card v-for="card in row" :key="card.date" :content="card" />
+
     </div>
   </div>
 </template>
@@ -32,20 +31,22 @@
     },
     computed: {
       rows() {
-        let chunkSize = 4;
-        let out = [Math.ceil(this.cards.length / chunkSize)];
+        let chunkSize = 4.0;
+        let size = Math.ceil(this.cards.length  / chunkSize);
+        let out = [];
 
-        for (let i = 0; i < out.length; i++) {
+        for (let i = 0; i < size; i++) {
           let start = i * chunkSize;
-          let end = start + (chunkSize - 1);
+          let end = start + chunkSize;
 
-          if (end > this.cards.length) {
-            out[i] = this.cards.slice(start, end)
+          if (end < this.cards.length) {
+            out.push(this.cards.slice(start, end));
           } else {
-            out[i] = this.cards.slice(start);
+            out.push(this.cards.slice(start));
           }
         }
 
+        console.log(out);
         return out;
       }
     }
@@ -53,5 +54,8 @@
 </script>
 
 <style scoped>
-
+  .preview-row {
+    display: flex;
+    justify-content: space-around;
+  }
 </style>
