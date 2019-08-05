@@ -1,6 +1,7 @@
 <template>
   <div>
     <div v-for="(row, index) in rows" :key="index">
+      
       <div v-for="card in row" :key="card.date">
         <preview-card :content="card" />
       </div>
@@ -39,9 +40,11 @@
           let start = i * chunkSize;
           let end = start + (chunkSize - 1);
 
-          end > this.cards.length ?
-              out[i] = this.cards.slice(start, end) :
-              out[i] = this.cards.slice(start);
+          if (end > this.cards.length) {
+            out[i] = this.cards.slice(start, end)
+          } else {
+            out[i] = this.cards.slice(start);
+          }
         }
 
         return out;
