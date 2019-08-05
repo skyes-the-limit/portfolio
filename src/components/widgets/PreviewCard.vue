@@ -5,7 +5,7 @@
       <span>{{ content.date }}</span>
       <span>{{ content.medium }}</span>
     </div>
-    <modal :show-modal="showModal" :content="content" />
+    <modal :show-modal.sync="showModal" :content="content" />
   </div>
 </template>
 

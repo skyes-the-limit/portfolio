@@ -46,13 +46,13 @@ const illustration = [
     date: "9-25-2017",
     medium: "Illustrator",
     description: "Composition of only squares.",
-    sources: ["2017-09-25 Prints.png"]
+    sources: ["2017-09-25 Squares.png"]
   },
   {
     date: "9-21-2017",
     medium: "Illustrator",
     description: "Study on geometric minimalism.",
-    sources: ["2017-09-2 Prints.png"]
+    sources: ["2017-09-21 Prints.png"]
   },
   {
     date: "4-14-2016",
@@ -61,10 +61,10 @@ const illustration = [
     sources: ["2016-04-14 Tarot.jpg"]
   },
   {
-    date: "3-17-2016",
+    date: "3-22-2016",
     medium: "Graphite",
     description: "Portrait of Richard Dawkins.",
-    sources: ["2016-03-17 Dawkins.png"]
+    sources: ["2016-03-22 Dawkins.png"]
   }
 ];
 const animation = [
@@ -72,7 +72,7 @@ const animation = [
     date: "12-14-2018",
     medium: "Maya",
     description: "Short talent show from an animated character.",
-    sources: ["2018-12-14 Talent Show"],
+    sources: ["2018-12-14 Talent Show.png"],
     videoId: "352084087"
   },
   {
@@ -90,10 +90,10 @@ const animation = [
     videoId: "352083588"
   },
   {
-    date: "3-29-2018",
+    date: "3-20-2018",
     medium: "AfterEffects",
     description: "Lyric video focusing on transforming audio into visual representations.",
-    sources: ["2018-03-29 Lyrics.png"],
+    sources: ["2018-03-20 Lyrics.png"],
     videoId: "352082622"
   },
   {

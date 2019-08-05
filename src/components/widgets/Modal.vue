@@ -2,12 +2,12 @@
   <div>
     <transition name="modal">
       <div v-if="showModal">
-        <div class="overlay" @click.self="showModal = false">
+        <div class="overlay" @click.self="closeModal()">
           <div class="modal">
             <vimeo-player v-if="content.videoId" :video-id="content.videoId"
                           :player-width="playerWidth" :player-height="playerHeight"
                           :loop="loop" :autoplay="autoplay" />
-            <img v-else :src="content.sources[0]">
+            <img v-else :src="imageSrc[0]">
             <p>{{ content.description }}</p>
           </div>
         </div>
@@ -48,7 +48,21 @@
         autoplay: false
       }
     },
+    computed: {
+      imageSrc() {
+        let out = [];
+
+        for (let i = 0; i < this.content.sources.length; i++) {
+          out.push(require("@/assets/img/" + this.content.sources));
+        }
+
+        return out;
+      }
+    },
     methods: {
+      closeModal() {
+        this.$emit('update:show-modal', false);
+      },
       onReady() {
         this.playerReady = true
       },
