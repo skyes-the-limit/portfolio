@@ -6,8 +6,12 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import VueVimeoPlayer from 'vue-vimeo-player'
   import NavBar from 'components/NavBar.vue';
   import router from 'router/index.js'
+
+  Vue.use(VueVimeoPlayer);
 
   export default {
     name: 'App',

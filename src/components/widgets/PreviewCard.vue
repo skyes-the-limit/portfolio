@@ -1,12 +1,20 @@
 <template>
-  <div>
-    <img :src="content.sources[0]">
+  <div class="preview-card">
+    <img :src="content.sources[0]" @click="showModal = !showModal">
+    <div class="info">
+      <span>{{ content.date }}</span>
+      <span>{{ content.medium }}</span>
+    </div>
+    <modal :show-modal="showModal" :content="content" />
   </div>
 </template>
 
 <script>
+  import Modal from './Modal';
+
   export default {
     name: "PreviewCard",
+    components: {Modal},
     props: {
       content: {
         type: Object,
@@ -19,20 +27,36 @@
           }
         }
       }
-      /*  Expect content to be an Object with the following fields:
-            * String date         (creation date of the piece in format YYYY-MM-DD)
-            * String medium       (medium or programs used to create the piece)
-            * String description  (a description of the piece)
-            * String[] sources    (image/video sources to display)
-      */
     },
+    data() {
+      return {
+        showModal: false
+      }
+    }
   }
 </script>
 
 <style scoped>
   img {
-    width: 20vw;
-    height: 20vh;
+    width: 22vw;
+    height: 22vw;
     object-fit: cover;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  img:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+
+  .preview-card {
+    display: inline;
+    margin: 1.5vw 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
   }
 </style>

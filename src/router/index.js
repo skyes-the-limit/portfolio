@@ -15,28 +15,28 @@ export default new Router({
       component: Home
     },
     {
-      path: '/2D',
-      name: '2D',
+      path: '/illustration',
+      name: 'Illustration',
       component: ContentPage,
-      props: store.getters.twoD
+      props: { cards: store.getters.illustration }
     },
     {
-      path: '/3D',
-      name: '3D',
+      path: '/animation',
+      name: 'Animation',
       component: ContentPage,
-      props: store.getters.threeD
+      props: { cards: store.getters.animation }
     },
     {
-      path: '/video',
-      name: 'Video',
+      path: '/videography',
+      name: 'Videography',
       component: ContentPage,
-      props: store.getters.video
+      props: { cards: store.getters.videography }
     },
     {
       path: '/programming',
       name: 'Programming',
       component: ContentPage,
-      props: store.getters.programming
+      props: { cards: store.getters.programming }
     },
     {
       path: 'About',
