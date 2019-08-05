@@ -18,25 +18,25 @@ export default new Router({
       path: '/illustration',
       name: 'Illustration',
       component: ContentPage,
-      props: store.getters.illustration
+      props: { cards: store.getters.illustration }
     },
     {
       path: '/animation',
       name: 'Animation',
       component: ContentPage,
-      props: store.getters.animation
+      props: { cards: store.getters.animation }
     },
     {
       path: '/videography',
       name: 'Videography',
       component: ContentPage,
-      props: store.getters.videography
+      props: { cards: store.getters.videography }
     },
     {
       path: '/programming',
       name: 'Programming',
       component: ContentPage,
-      props: store.getters.programming
+      props: { cards: store.getters.programming }
     },
     {
       path: 'About',

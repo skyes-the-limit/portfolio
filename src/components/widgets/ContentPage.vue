@@ -1,7 +1,6 @@
 <template>
   <div>
     <div v-for="(row, index) in rows" :key="index">
-      
       <div v-for="card in row" :key="card.date">
         <preview-card :content="card" />
       </div>
