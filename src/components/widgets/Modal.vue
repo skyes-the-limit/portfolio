@@ -4,7 +4,10 @@
       <div v-if="showModal">
         <div class="overlay" @click.self="showModal = false">
           <div class="modal">
-            <img :src="content.sources[0]">
+            <vimeo-player v-if="content.videoId" :video-id="content.videoId"
+                          :player-width="playerWidth" :player-height="playerHeight"
+                          :loop="loop" :autoplay="autoplay" />
+            <img v-else :src="content.sources[0]">
             <p>{{ content.description }}</p>
           </div>
         </div>
@@ -14,6 +17,9 @@
 </template>
 
 <script>
+  let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
   export default {
     name: "Modal",
     props: {
@@ -27,9 +33,36 @@
             date: '',
             medium: '',
             description: '',
-            sources: []
+            sources: [],
+            videoId: ''
           }
         }
+      }
+    },
+    data() {
+      return {
+        playerWidth: 0.8 * w,
+        playerHeight: 0.8 * h,
+        options: {},
+        loop: true,
+        autoplay: false
+      }
+    },
+    methods: {
+      onReady() {
+        this.playerReady = true
+      },
+      play() {
+        this.$refs.player.play()
+      },
+      stop() {
+        this.$refs.player.stop()
+      },
+      mute() {
+        this.$refs.player.mute();
+      },
+      unmute() {
+        this.$refs.player.unmute()
       }
     }
   }
