@@ -1,6 +1,6 @@
 <template>
   <div class="preview-card">
-    <img :src="content.sources[0]" @click="showModal = !showModal">
+    <img :src="imageSrc()[0]" @click="showModal = !showModal">
     <div class="info">
       <span>{{ content.date }}</span>
       <span>{{ content.medium }}</span>
@@ -31,6 +31,17 @@
     data() {
       return {
         showModal: false
+      }
+    },
+    computed: {
+      imageSrc() {
+        let out = [];
+
+        for (let i = 0; i < this.content.sources.length; i++) {
+          out.push(require("@/assets/images/" + this.content.sources));
+        }
+
+        return out;
       }
     }
   }
