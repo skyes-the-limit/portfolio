@@ -38,7 +38,7 @@
         let out = [];
 
         for (let i = 0; i < this.content.sources.length; i++) {
-          out.push(require("@/assets/img/" + this.content.sources));
+          out.push(require("@/assets/img/" + this.content.sources[i]));
         }
 
         return out;
