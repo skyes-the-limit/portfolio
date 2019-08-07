@@ -11,6 +11,7 @@
                           :loop="loop" :autoplay="autoplay" />
             <img v-if="displayObject.type === 'image'" :src="displayObject.source">
             <p>{{ content.description }}</p>
+            <a v-if="content.github" :href="'https://github.com/ArielleBishop/' + content.github">Github</a>
           </div>
         </div>
       </div>

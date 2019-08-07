@@ -180,7 +180,7 @@ const videography = [
     videoSources: ["352082020"]
   }
 ];
-const programming = [ // TODO: modify github in description to be a new field w/ link
+const programming = [
   {
     date: "7-29-19",
     medium: "Processing",
@@ -190,7 +190,7 @@ const programming = [ // TODO: modify github in description to be a new field w/
       "2019-07-29 Simple Image Processing (5).png", "2019-07-29 Simple Image Processing (6).png",
       "2019-07-29 Simple Image Processing (7).png"],
     videoSources: [],
-    github: "ArielleBishop/creative-coding/tree/master/OutsideData"
+    github: "creative-coding/tree/master/OutsideData"
   },
   {
     date: "7-26-19",
@@ -198,7 +198,7 @@ const programming = [ // TODO: modify github in description to be a new field w/
     description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
     imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
     videoSources: [""], // TODO upload to vimeo
-    github: "ArielleBishop/creative-coding/tree/master/FacadePortal"
+    github: "creative-coding/tree/master/FacadePortal"
   },
   {
     date: "7-14-19",
@@ -206,7 +206,7 @@ const programming = [ // TODO: modify github in description to be a new field w/
     description: "Tessellating hexagons based on Perlin Noise.",
     imageSources: ["2019-07-14 Generative Tessellations.png"],
     videoSources: [""], //TODO: upload to vimeo
-    github: "ArielleBishop/creative-coding/tree/master/GenerativeDesign"
+    github: "creative-coding/tree/master/GenerativeDesign"
   },
   {
     date: "7-6-19",
@@ -214,7 +214,7 @@ const programming = [ // TODO: modify github in description to be a new field w/
     description: "Allows users to draw with complex polygons.",
     imageSources: ["2019-07-06 Drawing Machine.png"],
     videoSources: [],
-    github: "ArielleBishop/creative-coding/tree/master/DrawingMachine"
+    github: "creative-coding/tree/master/DrawingMachine"
   },
   {
     date: "6-28-19",
@@ -237,7 +237,7 @@ const programming = [ // TODO: modify github in description to be a new field w/
     medium: "Java",
     description: "A simplified animation editing interface.",
     imageSources: ["2018-12-13 Animator.png"],
-    github: "ArielleBishop/animator",
+    github: "animator",
     videoSources: []
   },
   {
