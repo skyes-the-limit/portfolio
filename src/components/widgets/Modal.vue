@@ -4,8 +4,10 @@
       <div v-if="showModal">
         <div class="overlay" @click.self="closeModal()">
           <div class="modal">
-            <label class="carousel__control carousel__control--backward" @click="decrement()" />
-            <label class="carousel__control carousel__control--forward" @click="increment()" />
+            <template v-if="(content.imageSources.length + content.videoSources.length) > 1">
+              <label class="carousel__control carousel__control--backward" @click="decrement()" />
+              <label class="carousel__control carousel__control--forward" @click="increment()" />
+            </template>
             <vimeo-player v-if="displayObject.type === 'video'" :video-id="displayObject.source"
                           :player-width="playerWidth" :player-height="playerHeight"
                           :loop="loop" :autoplay="autoplay" />
