@@ -172,50 +172,64 @@ const programming = [ // TODO: modify github in description to be a new field w/
   {
     date: "7-29-19",
     medium: "Processing",
-    description: "Using google image search as an input, render images via various shapes.\n" +
-      "Github: ArielleBishop/creative-coding/tree/master/OutsideData",
+    description: "Using google image search as an input, render images via various shapes.",
     sources: ["2019-07-29 Simple Image Processing (1).png", "2019-07-29 Simple Image Processing (2).png",
       "2019-07-29 Simple Image Processing (3).png", "2019-07-29 Simple Image Processing (4).png",
       "2019-07-29 Simple Image Processing (5).png", "2019-07-29 Simple Image Processing (6).png",
-      "2019-07-29 Simple Image Processing (7).png"]
+      "2019-07-29 Simple Image Processing (7).png"],
+    github: "ArielleBishop/creative-coding/tree/master/OutsideData"
   },
   {
     date: "7-26-19",
     medium: "Processing",
-    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria\n" +
-      "Github: ArielleBishop/creative-coding/tree/master/FacadePortal",
+    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
     sources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
-    // videoId: "" // TODO upload to vimeo
+    videoId: "", // TODO upload to vimeo
+    github: "ArielleBishop/creative-coding/tree/master/FacadePortal"
   },
   {
     date: "7-14-19",
     medium: "Processing",
-    description: "Tessellating hexagons based on Perlin Noise\n" +
-      "Github: ArielleBishop/creative-coding/tree/master/GenerativeDesign",
+    description: "Tessellating hexagons based on Perlin Noise.",
     sources: ["2019-07-14 Generative Tessellations.png"],
-    // videoId: "" //TODO: upload to vimeo
+    videoId: "", //TODO: upload to vimeo
+    github: "ArielleBishop/creative-coding/tree/master/GenerativeDesign"
   },
   {
     date: "7-6-19",
     medium: "Processing",
-    description: "Allows users to draw with complex polygons.\n" +
-      "Github: ArielleBishop/creative-coding/tree/master/DrawingMachine",
-    sources: ["2019-07-06 Drawing Machine.png"]
+    description: "Allows users to draw with complex polygons.",
+    sources: ["2019-07-06 Drawing Machine.png"],
+    github: "ArielleBishop/creative-coding/tree/master/DrawingMachine"
   },
-  // TODO: SHIP ROUTE MANAGER
+  {
+    date: "6-28-19",
+    medium: "Java | Vue.JS | PostgreSQL",
+    description: "Internal tool designed and implemented during co-op at Chewy for managing their Ship Route data.",
+    sources: ["2019-06-28 Ship Route Manager (1).png", "2019-06-28 Ship Route Manager (2).png",
+      "2019-06-28 Ship Route Manager (3).png", "2019-06-28 Ship Route Manager (4).png",
+      "2019-06-28 Ship Route Manager (5).png", "2019-06-28 Ship Route Manager (6).png",
+      "2019-06-28 Ship Route Manager (7).png", "2019-06-28 Ship Route Manager (8).png",
+      "2019-06-28 Ship Route Manager (9).png", "2019-06-28 Ship Route Manager (10).png",
+      "2019-06-28 Ship Route Manager (11).png", "2019-06-28 Ship Route Manager (12).png",
+      "2019-06-28 Ship Route Manager (13).png", "2019-06-28 Ship Route Manager (14).png",
+      "2019-06-28 Ship Route Manager (15).png", "2019-06-28 Ship Route Manager (16).png",
+      "2019-06-28 Ship Route Manager (17).png", "2019-06-28 Ship Route Manager (18).png",
+      "2019-06-28 Ship Route Manager (19).png"]
+  },
   {
     date: "12-13-18",
     medium: "Java",
-    description: "A simplified animation editing interface.\n" +
-      "Github: ArielleBishop/animator",
-    sources: ["2018-12-13 animator.png"] // TODO: rerender file, un-parsable character in binary
+    description: "A simplified animation editing interface.",
+    sources: ["2018-12-13 Animator.png"],
+    github: "ArielleBishop/animator"
   },
   {
     date: "6-3-18",
     medium: "Unity",
     description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
     sources: ["2018-06-03 Find Drake.png"],
-    // videoId: "" //TODO: upload to vimeo
+    videoId: "" //TODO: upload to vimeo
   },
   {
     date: "3-27-18",

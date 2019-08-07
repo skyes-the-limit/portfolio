@@ -7,8 +7,8 @@
             <vimeo-player v-if="content.videoId" :video-id="content.videoId"
                           :player-width="playerWidth" :player-height="playerHeight"
                           :loop="loop" :autoplay="autoplay" />
-              <img v-else :src="imageSrc(content.sources[0])">
-              <!-- TODO: Add support for multiple image sources. -->
+            <img v-else :src="imageSrc(content.sources[0])">
+            <!-- TODO: Add support for multiple image sources. -->
             <p>{{ content.description }}</p>
           </div>
         </div>
