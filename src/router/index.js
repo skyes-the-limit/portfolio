@@ -39,7 +39,7 @@ export default new Router({
       props: { cards: store.getters.programming }
     },
     {
-      path: 'About',
+      path: '/about',
       name: 'About',
       component: About
     }
