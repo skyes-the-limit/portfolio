@@ -7,11 +7,11 @@
 </template>
 
 <script>
-  import PreviewCard from 'widgets/PreviewCard';
+  import PreviewCard from '@/components/widgets/PreviewCard';
 
   export default {
     name: "ContentPage",
-    components: {PreviewCard},
+    components: { PreviewCard },
     props: {
       cards: {
         type: Array,
@@ -23,7 +23,7 @@
             * String date         (creation date of the piece in format YYYY-MM-DD)
             * String medium       (medium or programs used to create the piece)
             * String description  (a description of the piece)
-            * String[] sources    (image/video sources to display)
+            * String[] imageSources    (image/video sources to display)
       */
     },
     computed: {

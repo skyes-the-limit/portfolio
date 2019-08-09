@@ -11,7 +11,7 @@
     </div>
     <li v-for="(slide, index) in slides" :key="slide.imageSrc" class="carousel__slide"
         :style="{
-          backgroundImage: 'url(' + slide.imageSrc + ')',
+          backgroundImage: 'url(' + require('@/assets/img/' + slide.imageSrc) + ')',
           transform: 'translateX(' + (index - selectedIndex) * 100 + '%)'
         }">
       <router-link :to="{ name: slide.page }">
@@ -92,7 +92,7 @@
   .carousel__control {
     height: 30px;
     width: 30px;
-    margin-top: -15px;
+    margin: -15px 15px 0;
     top: 50%;
     position: absolute;
     display: block;

@@ -1,11 +1,13 @@
 <template>
   <div class="preview-card">
-    <img :src="content.sources[0]" @click="showModal = !showModal">
-    <div class="info">
-      <span>{{ content.date }}</span>
-      <span>{{ content.medium }}</span>
-    </div>
-    <modal :show-modal="showModal" :content="content" />
+    <template v-if="content.imageSources.length > 0">
+      <img :src="imageSrc[0]" @click="showModal = !showModal">
+      <div class="info">
+        <span>{{ content.date }}</span>
+        <span>{{ content.medium }}</span>
+      </div>
+      <modal :show-modal.sync="showModal" :content="content" />
+    </template>
   </div>
 </template>
 
@@ -23,7 +25,8 @@
             date: '',
             medium: '',
             description: '',
-            sources: []
+            imageSources: [],
+            videoSources: []
           }
         }
       }
@@ -31,6 +34,17 @@
     data() {
       return {
         showModal: false
+      }
+    },
+    computed: {
+      imageSrc() {
+        let out = [];
+
+        for (let i = 0; i < this.content.imageSources.length; i++) {
+          out.push(require("@/assets/img/" + this.content.imageSources[i]));
+        }
+
+        return out;
       }
     }
   }
@@ -55,6 +69,7 @@
     display: inline;
     margin: 1.5vw 0;
   }
+
   .info {
     display: flex;
     justify-content: space-between;
