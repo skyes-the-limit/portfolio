@@ -180,8 +180,7 @@ const programming = [
     description: "Using google image search as an input, render images via various shapes.",
     imageSources: ["2019-07-29 Simple Image Processing (1).png", "2019-07-29 Simple Image Processing (2).png",
       "2019-07-29 Simple Image Processing (3).png", "2019-07-29 Simple Image Processing (4).png",
-      "2019-07-29 Simple Image Processing (5).png", "2019-07-29 Simple Image Processing (6).png",
-      "2019-07-29 Simple Image Processing (7).png"],
+      "2019-07-29 Simple Image Processing (5).png", "2019-07-29 Simple Image Processing (6).png"],
     videoSources: [],
     github: "creative-coding/tree/master/OutsideData"
   },
@@ -221,8 +220,7 @@ const programming = [
       "2019-06-28 Ship Route Manager (11).png", "2019-06-28 Ship Route Manager (12).png",
       "2019-06-28 Ship Route Manager (13).png", "2019-06-28 Ship Route Manager (14).png",
       "2019-06-28 Ship Route Manager (15).png", "2019-06-28 Ship Route Manager (16).png",
-      "2019-06-28 Ship Route Manager (17).png", "2019-06-28 Ship Route Manager (18).png",
-      "2019-06-28 Ship Route Manager (19).png"],
+      "2019-06-28 Ship Route Manager (17).png", "2019-06-28 Ship Route Manager (18).png"],
     videoSources: []
   },
   {
