@@ -92,7 +92,7 @@
   .carousel__control {
     height: 30px;
     width: 30px;
-    margin-top: -15px;
+    margin: -15px 15px 0;
     top: 50%;
     position: absolute;
     display: block;

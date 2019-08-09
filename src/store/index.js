@@ -15,11 +15,25 @@ Vue.use(Vuex);
 const illustration = [
   // TODO: SCREEN PRINTS
   {
-    date: "5-19-18",
-    medium: "Adobe Photoshop",
-    description: "Psycho-geographical map of Toronto's financial district.",
-    imageSources: ["2018-05-19 Psychogeographical Map.jpg"],
-    videoSources: []
+    date: "11-7-18",
+    medium: "Photoshop & AfterEffects",
+    description: "An educational video on different culture's 'Halloween-esque' holidays.\nMade in collaboration with Ryan Nuz & Raveena Jain.",
+    imageSources: ["2018-11-07 Edutainment.png"],
+    videoSources: [""] // TODO: Upload to Vimeo when weekly limit resets
+  },
+  {
+    date: "3-20-18",
+    medium: "AfterEffects",
+    description: "Lyric video focusing on transforming audio into visual representations.",
+    imageSources: ["2018-03-20 Lyrics.png"],
+    videoSources: ["352082622"]
+  },
+  {
+    date: "3-13-18",
+    medium: "Photoshop & Premiere",
+    description: "Sci-fi animatic about tense family relations\nMade in collaboration with Sophia Cheon.",
+    imageSources: ["2018-03-13 Animatic.png"],
+    videoSources: ["352082394"]
   },
   {
     date: "11-20-17",
@@ -87,34 +101,6 @@ const animation = [
     videoSources: ["352084087"]
   },
   {
-    date: "11-7-18",
-    medium: "Photoshop & AfterEffects",
-    description: "An educational video on different culture's 'Halloween-esque' holidays.\nMade in collaboration with Ryan Nuz & Raveena Jain.",
-    imageSources: ["2018-11-07 Edutainment.png"],
-    videoSources: [""] // TODO: Upload to Vimeo when weekly limit resets
-  },
-  {
-    date: "9-19-18",
-    medium: "Clay & Premiere",
-    description: "Claymation built from visualizing cartoon soundtrack.",
-    imageSources: ["2018-09-19 Claymation.png"],
-    videoSources: ["352083588"]
-  },
-  {
-    date: "3-20-18",
-    medium: "AfterEffects",
-    description: "Lyric video focusing on transforming audio into visual representations.",
-    imageSources: ["2018-03-20 Lyrics.png"],
-    videoSources: ["352082622"]
-  },
-  {
-    date: "3-13-18",
-    medium: "Photoshop & Premiere",
-    description: "Sci-fi animatic about tense family relations\nMade in collaboration with Sophia Cheon.",
-    imageSources: ["2018-03-13 Animatic.png"],
-    videoSources: ["352082394"]
-  },
-  {
     date: "3-16-17",
     medium: "3DS Max",
     description: "Experiment with rain particle generator.",
@@ -157,6 +143,13 @@ const videography = [
     description: "A variant on the 'chalk talk' method of animation.\nMade in collaboration with Ryan Nuz & Raveen Jain",
     imageSources: ["2018-09-25 Chalk Talk.png"],
     videoSources: ["352083851"]
+  },
+  {
+    date: "9-19-18",
+    medium: "Clay & Premiere",
+    description: "Claymation built from visualizing cartoon soundtrack.",
+    imageSources: ["2018-09-19 Claymation.png"],
+    videoSources: ["352083588"]
   },
   {
     date: "5-23-18",
