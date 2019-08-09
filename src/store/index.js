@@ -13,7 +13,15 @@ Vue.use(Vuex);
 // }
 
 const illustration = [
-  // TODO: SCREEN PRINTS
+  {
+    date: "7-22-19",
+    medium: "Screenprinted Fabric",
+    description: "Exploration of tagging and graffiti using sited textiles.",
+    imageSources: ["2019-07-22 Screenprint (1).jpg", "2019-07-22 Screenprint (2).jpg",
+      "2019-07-22 Screenprint (3).jpg", "2019-07-22 Screenprint (4).jpg",
+      "2019-07-22 Screenprint (5).jpg", "2019-07-22 Screenprint (6).jpg"],
+    videoSources: []
+  },
   {
     date: "11-7-18",
     medium: "Photoshop & AfterEffects",
