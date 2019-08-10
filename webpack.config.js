@@ -11,7 +11,7 @@ module.exports = {
     filename: 'build.js',
     publicPath: process.env.NODE_ENV === 'production'
       ? '/portfolio/'
-      : ''
+      : '/'
   },
   module: {
     rules: [
@@ -73,7 +73,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(pdf)$/,
+        test: /\.pdf$/,
         loader: 'file-loader',
         options: {
           name: 'assets/[name].[ext]?[hash]'
