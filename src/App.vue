@@ -9,7 +9,7 @@
   import Vue from 'vue'
   import VueVimeoPlayer from 'vue-vimeo-player'
   import NavBar from '@/components/NavBar.vue';
-  import router from '@/router/index.js'
+  import router from '@/router/'
 
   Vue.use(VueVimeoPlayer);
 

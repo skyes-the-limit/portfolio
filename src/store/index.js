@@ -120,7 +120,7 @@ const animation = [
     medium: "3DS Max",
     description: "Experiment with fire particle effect.",
     imageSources: ["2017-02-15 Campfire.jpg"],
-    videoSources: [""] //TODO: Upload to Vimeo when weekly limit resets
+    videoSources: []
   },
   {
     date: "1-13-17",
@@ -148,7 +148,7 @@ const videography = [
   {
     date: "9-25-18",
     medium: "Whiteboard & Premiere",
-    description: "A variant on the 'chalk talk' method of animation.\nMade in collaboration with Ryan Nuz & Raveen Jain",
+    description: "A variant on the 'chalk talk' method of animation.\nMade in collaboration with Ryan Nuz & Raveena Jain",
     imageSources: ["2018-09-25 Chalk Talk.png"],
     videoSources: ["352083851"]
   },

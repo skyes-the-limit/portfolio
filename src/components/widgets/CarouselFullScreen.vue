@@ -61,7 +61,6 @@
     list-style: none;
   }
 
-  .carousel__controls,
   .carousel__activator {
     display: none;
   }
@@ -76,11 +75,6 @@
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
-  }
-
-  .carousel__activator:checked ~ .carousel__controls {
-    display: block;
-    opacity: 1;
   }
 
   .carousel__activator:checked ~ .carousel__indicators .carousel__indicator {
@@ -141,18 +135,6 @@
 
   .carousel__indicator:hover {
     opacity: 0.75;
-  }
-
-  .carousel__track {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    transition: -webkit-transform 0.5s ease 0s;
-    transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
   }
 
   .carousel__track .carousel__slide {
