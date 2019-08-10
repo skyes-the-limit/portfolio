@@ -120,7 +120,7 @@ const animation = [
     medium: "3DS Max",
     description: "Experiment with fire particle effect.",
     imageSources: ["2017-02-15 Campfire.jpg"],
-    videoSources: [""] //TODO: Upload to Vimeo when weekly limit resets
+    videoSources: []
   },
   {
     date: "1-13-17",
