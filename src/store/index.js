@@ -106,7 +106,7 @@ const animation = [
     medium: "Maya",
     description: "Talent show act of an animated and rigged character.",
     imageSources: ["2018-12-14 Talent Show.png"],
-    videoSources: ["352084087"] // TODO: render 360 turnaround & add to vimeo
+    videoSources: ["352084087"]
   },
   {
     date: "3-16-17",
@@ -134,7 +134,7 @@ const animation = [
     medium: "3DS Max",
     description: "Character model based on Castle Crashers.",
     imageSources: ["2016-11-18 Castle Crasher.jpg"],
-    videoSources: [] // TODO: render 360 turnaround & add to vimeo
+    videoSources: [] // TODO: Upload to Vimeo when weekly limit resets
   },
   {
     date: "10-7-16",
@@ -197,7 +197,7 @@ const programming = [
     medium: "Processing",
     description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
     imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
-    videoSources: [""], // TODO: Upload to Vimeo when weekly limit resets, record demo on console
+    videoSources: [""], // TODO: Upload to Vimeo when weekly limit resets
     github: "creative-coding/tree/master/FacadePortal"
   },
   {
@@ -237,14 +237,14 @@ const programming = [
     description: "A simplified animation editing interface.",
     imageSources: ["2018-12-13 Animator.png"],
     github: "animator",
-    videoSources: [] // TODO: record demo & upload to vimeo
+    videoSources: []
   },
   {
     date: "6-3-18",
     medium: "Unity",
     description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
     imageSources: ["2018-06-03 Find Drake.png"],
-    videoSources: [""] //TODO: upload to vimeo
+    videoSources: [""] //TODO: Upload to Vimeo when weekly limit resets
   },
   {
     date: "3-27-18",
