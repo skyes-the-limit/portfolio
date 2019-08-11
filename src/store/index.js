@@ -25,7 +25,7 @@ const illustration = [
   {
     date: "11-7-18",
     medium: "Photoshop & AfterEffects",
-    description: "An educational video on different culture's 'Halloween-esque' holidays.\nMade in collaboration with Ryan Nuz & Raveena Jain.",
+    description: "An educational video on different culture's 'Halloween-esque' holidays. Made in collaboration with Ryan Nuz & Raveena Jain.",
     imageSources: ["2018-11-07 Edutainment.png"],
     videoSources: [""] // TODO: Upload to Vimeo when weekly limit resets
   },
@@ -39,7 +39,7 @@ const illustration = [
   {
     date: "3-13-18",
     medium: "Photoshop & Premiere",
-    description: "Sci-fi animatic about tense family relations\nMade in collaboration with Sophia Cheon.",
+    description: "Sci-fi animatic about tense family relations. Made in collaboration with Sophia Cheon.",
     imageSources: ["2018-03-13 Animatic.png"],
     videoSources: ["352082394"]
   },
@@ -104,9 +104,9 @@ const animation = [
   {
     date: "12-14-18",
     medium: "Maya",
-    description: "Short talent show from an animated character.",
+    description: "Talent show act of an animated and rigged character.",
     imageSources: ["2018-12-14 Talent Show.png"],
-    videoSources: ["352084087"]
+    videoSources: ["352084087"] // TODO: render 360 turnaround & add to vimeo
   },
   {
     date: "3-16-17",
@@ -134,7 +134,7 @@ const animation = [
     medium: "3DS Max",
     description: "Character model based on Castle Crashers.",
     imageSources: ["2016-11-18 Castle Crasher.jpg"],
-    videoSources: []
+    videoSources: [] // TODO: render 360 turnaround & add to vimeo
   },
   {
     date: "10-7-16",
@@ -148,14 +148,14 @@ const videography = [
   {
     date: "9-25-18",
     medium: "Whiteboard & Premiere",
-    description: "A variant on the 'chalk talk' method of animation.\nMade in collaboration with Ryan Nuz & Raveena Jain",
+    description: "A variant on the 'chalk talk' style of stop motion. Made in collaboration with Ryan Nuz & Raveena Jain.",
     imageSources: ["2018-09-25 Chalk Talk.png"],
     videoSources: ["352083851"]
   },
   {
     date: "9-19-18",
     medium: "Clay & Premiere",
-    description: "Claymation built from visualizing cartoon soundtrack.",
+    description: "Claymation conceptualized by visualizing a predetermined cartoon soundtrack.",
     imageSources: ["2018-09-19 Claymation.png"],
     videoSources: ["352083588"]
   },
@@ -164,7 +164,7 @@ const videography = [
     medium: "Premiere",
     description: "Short interview of a Toronto local named James.",
     imageSources: ["2018-05-23 Profile.png"],
-    videoSources: [""] //TODO: Upload to Vimeo when weekly limit resets
+    videoSources: [""] // TODO: Upload to Vimeo when weekly limit resets
   },
   {
     date: "4-23-18",
@@ -197,7 +197,7 @@ const programming = [
     medium: "Processing",
     description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
     imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
-    videoSources: [""], // TODO upload to vimeo
+    videoSources: [""], // TODO: Upload to Vimeo when weekly limit resets, record demo on console
     github: "creative-coding/tree/master/FacadePortal"
   },
   {
@@ -205,7 +205,7 @@ const programming = [
     medium: "Processing",
     description: "Tessellating hexagons based on Perlin Noise.",
     imageSources: ["2019-07-14 Generative Tessellations.png"],
-    videoSources: [""], //TODO: upload to vimeo
+    videoSources: [""], // TODO: Upload to Vimeo when weekly limit resets
     github: "creative-coding/tree/master/GenerativeDesign"
   },
   {
@@ -237,7 +237,7 @@ const programming = [
     description: "A simplified animation editing interface.",
     imageSources: ["2018-12-13 Animator.png"],
     github: "animator",
-    videoSources: []
+    videoSources: [] // TODO: record demo & upload to vimeo
   },
   {
     date: "6-3-18",
