@@ -25,7 +25,7 @@ const illustration = [
   {
     date: "11-7-18",
     medium: "Photoshop & AfterEffects",
-    description: "An educational video on different culture's 'Halloween-esque' holidays.\nMade in collaboration with Ryan Nuz & Raveena Jain.",
+    description: "An educational video on different culture's 'Halloween-esque' holidays.Made in collaboration with Ryan Nuz & Raveena Jain.",
     imageSources: ["2018-11-07 Edutainment.png"],
     videoSources: [""] // TODO: Upload to Vimeo when weekly limit resets
   },
@@ -39,7 +39,7 @@ const illustration = [
   {
     date: "3-13-18",
     medium: "Photoshop & Premiere",
-    description: "Sci-fi animatic about tense family relations\nMade in collaboration with Sophia Cheon.",
+    description: "Sci-fi animatic about tense family relations. Made in collaboration with Sophia Cheon.",
     imageSources: ["2018-03-13 Animatic.png"],
     videoSources: ["352082394"]
   },
@@ -148,7 +148,7 @@ const videography = [
   {
     date: "9-25-18",
     medium: "Whiteboard & Premiere",
-    description: "A variant on the 'chalk talk' method of animation.\nMade in collaboration with Ryan Nuz & Raveena Jain",
+    description: "A variant on the 'chalk talk' method of animation. Made in collaboration with Ryan Nuz & Raveena Jain",
     imageSources: ["2018-09-25 Chalk Talk.png"],
     videoSources: ["352083851"]
   },
@@ -195,7 +195,8 @@ const programming = [
   {
     date: "7-26-19",
     medium: "Processing",
-    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
+    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria. " +
+      "Made in collaboration with Kriti Gurubacharya & Maggie Van Nortwick.",
     imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
     videoSources: [""], // TODO upload to vimeo
     github: "creative-coding/tree/master/FacadePortal"
