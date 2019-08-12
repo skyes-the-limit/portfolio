@@ -27,7 +27,7 @@ const illustration = [
     medium: "Photoshop & AfterEffects",
     description: "An educational video on different culture's 'Halloween-esque' holidays. Made in collaboration with Ryan Nuz & Raveena Jain.",
     imageSources: ["2018-11-07 Edutainment.png"],
-    videoSources: [""] // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: [] // TODO: Upload to Vimeo when weekly limit resets
   },
   {
     date: "3-20-18",
@@ -134,7 +134,7 @@ const animation = [
     medium: "3DS Max",
     description: "Character model based on Castle Crashers.",
     imageSources: ["2016-11-18 Castle Crasher.jpg"],
-    videoSources: [] // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: ["353296476"]
   },
   {
     date: "10-7-16",
@@ -164,7 +164,7 @@ const videography = [
     medium: "Premiere",
     description: "Short interview of a Toronto local named James.",
     imageSources: ["2018-05-23 Profile.png"],
-    videoSources: [""] // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: ["353296500"]
   },
   {
     date: "4-23-18",
@@ -197,7 +197,7 @@ const programming = [
     medium: "Processing",
     description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
     imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
-    videoSources: [""], // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: ["353297101", "353273878"],
     github: "creative-coding/tree/master/FacadePortal"
   },
   {
@@ -205,7 +205,7 @@ const programming = [
     medium: "Processing",
     description: "Tessellating hexagons based on Perlin Noise.",
     imageSources: ["2019-07-14 Generative Tessellations.png"],
-    videoSources: [""], // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: ["353274180"],
     github: "creative-coding/tree/master/GenerativeDesign"
   },
   {
@@ -244,7 +244,7 @@ const programming = [
     medium: "Unity",
     description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
     imageSources: ["2018-06-03 Find Drake.png"],
-    videoSources: [""] //TODO: Upload to Vimeo when weekly limit resets
+    videoSources: [] // TODO: Record higher quality demo & upload to vimeo
   },
   {
     date: "3-27-18",
