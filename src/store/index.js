@@ -127,7 +127,7 @@ const animation = [
     medium: "3DS Max",
     description: "First animation on a rigged character.",
     imageSources: ["2017-01-13 Captain Chunk.png"],
-    videoSources: ["352081642"]
+    videoSources: ["353296008"]
   },
   {
     date: "11-18-16",
@@ -197,7 +197,7 @@ const programming = [
     medium: "Processing",
     description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria. " +
       "Made in collaboration with Kriti Gurubacharya & Maggie Van Nortwick.",
-    imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
+    imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"], // TODO: take additional stills from console view
     videoSources: ["353297101", "353273878"],
     github: "creative-coding/tree/master/FacadePortal"
   },
@@ -205,7 +205,7 @@ const programming = [
     date: "7-14-19",
     medium: "Processing",
     description: "Tessellating hexagons based on Perlin Noise.",
-    imageSources: ["2019-07-14 Generative Tessellations.png"],
+    imageSources: ["2019-07-14 Generative Tessellations.png"], // TODO: take additional stills demo video
     videoSources: ["353274180"],
     github: "creative-coding/tree/master/GenerativeDesign"
   },
@@ -214,7 +214,7 @@ const programming = [
     medium: "Processing",
     description: "Allows users to draw with complex polygons.",
     imageSources: ["2019-07-06 Drawing Machine.png"],
-    videoSources: [],
+    videoSources: [], // TODO: record & upload demo
     github: "creative-coding/tree/master/DrawingMachine"
   },
   {
@@ -236,7 +236,7 @@ const programming = [
     date: "12-13-18",
     medium: "Java",
     description: "A simplified animation editing interface.",
-    imageSources: ["2018-12-13 Animator.png"],
+    imageSources: ["2018-12-13 Animator.png"], // TODO: record additional stills and/or video demo
     github: "animator",
     videoSources: []
   },

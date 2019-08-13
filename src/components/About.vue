@@ -5,7 +5,7 @@
       <h1>Hello,</h1>
       I'm a Boston based artist & developer currently studying at Northeastern University.
       I'm interested in the intersection of computer technology and media art, especially virtual reality and interaction design.
-      In fall 2019 I'll be pursuing my second co-op.
+      I'm currently pursuing my second co-op for January 2020.
       <br><br>
       Check out my <a :href="require('@/assets/Arielle_Bishop_Resume.pdf')">resume</a>!
     </span>
@@ -40,5 +40,9 @@
   span {
     margin: 2rem;
     max-width: 26rem;
+  }
+
+  h1 {
+    margin: 0.5em 0;
   }
 </style>
