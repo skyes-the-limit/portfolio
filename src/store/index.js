@@ -225,7 +225,7 @@ const programming = [
       "2019-07-06 Drawing Machine (9).png", "2019-07-06 Drawing Machine (10).png",
       "2019-07-06 Drawing Machine (11).png", "2019-07-06 Drawing Machine (12).png",
       "2019-07-06 Drawing Machine (13).png"],
-    videoSources: [], // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: ["353704125"],
     github: "creative-coding/tree/master/DrawingMachine"
   },
   {
