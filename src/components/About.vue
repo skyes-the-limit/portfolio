@@ -1,14 +1,16 @@
 <template>
   <div class="fullscreen-centered">
-    <img :src="require('@/assets/img/about-profile.png')">
-    <span>
-      <h1>Hello,</h1>
-      I'm a Boston based artist & developer currently studying at Northeastern University.
-      I'm interested in the intersection of computer technology and media art, especially virtual reality and interaction design.
-      I'm currently pursuing my second co-op for January 2020.
-      <br><br>
-      Feel free to reach out to me at ArielleEBishop@gmail.com
-    </span>
+    <div class="justify-top">
+      <img :src="require('@/assets/img/about-profile.png')">
+      <span>
+        <h1>Hello,</h1>
+        I'm a Boston based artist & developer currently studying at Northeastern University.
+        I'm interested in the intersection of computer technology and media art, especially virtual reality and interaction design.
+        I am currently searching for my second co-op in January 2020.
+        <br><br>
+        Feel free to reach out to me at ArielleEBishop@gmail.com
+      </span>
+    </div>
   </div>
 </template>
 
@@ -27,6 +29,11 @@
     width: 100vw;
   }
 
+  .justify-top {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   img {
     display: inline-block;
     max-width: 75vw;
@@ -38,7 +45,7 @@
   }
 
   span {
-    margin: 2rem;
+    margin: 0 2rem;
     max-width: 26rem;
   }
 
