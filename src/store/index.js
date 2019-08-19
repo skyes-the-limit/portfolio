@@ -27,7 +27,7 @@ const illustration = [
     medium: "Photoshop & AfterEffects",
     description: "An educational video on different culture's 'Halloween-esque' holidays. Made in collaboration with Ryan Nuz & Raveena Jain.",
     imageSources: ["2018-11-07 Edutainment.png"],
-    videoSources: [] // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: ["354709668"]
   },
   {
     date: "3-20-18",
@@ -201,7 +201,7 @@ const programming = [
       "2019-07-26 Austauschstadt (3).png", "2019-07-26 Austauschstadt (4).png",
       "2019-07-26 Austauschstadt (5).png", "2019-07-26 Austauschstadt (6).png",
       "2019-07-26 Austauschstadt (7).png"],
-    videoSources: ["353297101", "353273878"], // TODO: Upload newer console view to Vimeo when weekly limit resets
+    videoSources: ["353297101", "353273878"], // TODO: Upload video to newer console view
     github: "creative-coding/tree/master/FacadePortal"
   },
   {
@@ -225,7 +225,7 @@ const programming = [
       "2019-07-06 Drawing Machine (9).png", "2019-07-06 Drawing Machine (10).png",
       "2019-07-06 Drawing Machine (11).png", "2019-07-06 Drawing Machine (12).png",
       "2019-07-06 Drawing Machine (13).png"],
-    videoSources: ["353704125"],
+    videoSources: ["353704125"], // TODO: fix video artifacts & re-upload
     github: "creative-coding/tree/master/DrawingMachine"
   },
   {
@@ -256,7 +256,7 @@ const programming = [
     medium: "Unity",
     description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
     imageSources: ["2018-06-03 Find Drake.png"],
-    videoSources: [] // TODO: Record higher quality demo & upload to vimeo
+    videoSources: [] // TODO: record demo
   },
   {
     date: "3-27-18",
