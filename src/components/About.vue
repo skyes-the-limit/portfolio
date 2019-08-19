@@ -7,7 +7,7 @@
       I'm interested in the intersection of computer technology and media art, especially virtual reality and interaction design.
       I'm currently pursuing my second co-op for January 2020.
       <br><br>
-      Check out my <a :href="require('@/assets/Arielle_Bishop_Resume.pdf')">resume</a>!
+      Feel free to reach out to me at ArielleEBishop@gmail.com
     </span>
   </div>
 </template>
