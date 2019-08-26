@@ -201,7 +201,7 @@ const programming = [
       "2019-07-26 Austauschstadt (3).png", "2019-07-26 Austauschstadt (4).png",
       "2019-07-26 Austauschstadt (5).png", "2019-07-26 Austauschstadt (6).png",
       "2019-07-26 Austauschstadt (7).png"],
-    videoSources: ["353297101", "353273878"], // TODO: Upload video to newer console view
+    videoSources: ["353297101", "355991818"],
     github: "creative-coding/tree/master/FacadePortal"
   },
   {
@@ -256,7 +256,7 @@ const programming = [
     medium: "Unity",
     description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
     imageSources: ["2018-06-03 Find Drake.png"],
-    videoSources: [] // TODO: record demo
+    videoSources: [] // TODO: record demo at NUVR lab
   },
   {
     date: "3-27-18",
