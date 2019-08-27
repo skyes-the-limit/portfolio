@@ -27,7 +27,7 @@ const illustration = [
     medium: "Photoshop & AfterEffects",
     description: "An educational video on different culture's 'Halloween-esque' holidays. Made in collaboration with Ryan Nuz & Raveena Jain.",
     imageSources: ["2018-11-07 Edutainment.png"],
-    videoSources: [] // TODO: Upload to Vimeo when weekly limit resets
+    videoSources: ["354709668"]
   },
   {
     date: "3-20-18",
@@ -127,7 +127,7 @@ const animation = [
     medium: "3DS Max",
     description: "First animation on a rigged character.",
     imageSources: ["2017-01-13 Captain Chunk.png"],
-    videoSources: ["352081642"]
+    videoSources: ["353296008"]
   },
   {
     date: "11-18-16",
@@ -195,16 +195,22 @@ const programming = [
   {
     date: "7-26-19",
     medium: "Processing",
-    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
-    imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png"],
-    videoSources: ["353297101", "353273878"],
+    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria. " +
+      "Made in collaboration with Kriti Gurubacharya & Maggie Van Nortwick.",
+    imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png",
+      "2019-07-26 Austauschstadt (3).png", "2019-07-26 Austauschstadt (4).png",
+      "2019-07-26 Austauschstadt (5).png", "2019-07-26 Austauschstadt (6).png",
+      "2019-07-26 Austauschstadt (7).png"],
+    videoSources: ["353297101", "355991818"],
     github: "creative-coding/tree/master/FacadePortal"
   },
   {
     date: "7-14-19",
     medium: "Processing",
     description: "Tessellating hexagons based on Perlin Noise.",
-    imageSources: ["2019-07-14 Generative Tessellations.png"],
+    imageSources: ["2019-07-14 Generative Tessellations (1).png", "2019-07-14 Generative Tessellations (2).png",
+      "2019-07-14 Generative Tessellations (3).png", "2019-07-14 Generative Tessellations (4).png",
+      "2019-07-14 Generative Tessellations (5).png", "2019-07-14 Generative Tessellations (6).png"],
     videoSources: ["353274180"],
     github: "creative-coding/tree/master/GenerativeDesign"
   },
@@ -212,8 +218,14 @@ const programming = [
     date: "7-6-19",
     medium: "Processing",
     description: "Allows users to draw with complex polygons.",
-    imageSources: ["2019-07-06 Drawing Machine.png"],
-    videoSources: [],
+    imageSources: ["2019-07-06 Drawing Machine (1).png", "2019-07-06 Drawing Machine (2).png",
+      "2019-07-06 Drawing Machine (3).png", "2019-07-06 Drawing Machine (4).png",
+      "2019-07-06 Drawing Machine (5).png", "2019-07-06 Drawing Machine (6).png",
+      "2019-07-06 Drawing Machine (7).png", "2019-07-06 Drawing Machine (8).png",
+      "2019-07-06 Drawing Machine (9).png", "2019-07-06 Drawing Machine (10).png",
+      "2019-07-06 Drawing Machine (11).png", "2019-07-06 Drawing Machine (12).png",
+      "2019-07-06 Drawing Machine (13).png"],
+    videoSources: ["356239943"],
     github: "creative-coding/tree/master/DrawingMachine"
   },
   {
@@ -244,7 +256,7 @@ const programming = [
     medium: "Unity",
     description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
     imageSources: ["2018-06-03 Find Drake.png"],
-    videoSources: [] // TODO: Record higher quality demo & upload to vimeo
+    videoSources: [] // TODO: record demo at NUVR lab
   },
   {
     date: "3-27-18",
