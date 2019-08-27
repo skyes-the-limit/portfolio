@@ -1,7 +1,7 @@
 <template>
   <div class="preview-card">
-    <template v-if="content.imageSources.length > 0">
-      <img :src="imageSrc[0]" @click="showModal = !showModal">
+    <template v-if="content.previewSource">
+      <img :src="imageSrc" @click="showModal = !showModal">
       <div class="info">
         <span>{{ content.date }}</span>
         <span>{{ content.medium }}</span>
@@ -25,6 +25,7 @@
             date: '',
             medium: '',
             description: '',
+            previewSource: '',
             imageSources: [],
             videoSources: []
           }
@@ -38,13 +39,7 @@
     },
     computed: {
       imageSrc() {
-        let out = [];
-
-        for (let i = 0; i < this.content.imageSources.length; i++) {
-          out.push(require("@/assets/img/" + this.content.imageSources[i]));
-        }
-
-        return out;
+        return require("@/assets/img/" + this.content.previewSource);
       }
     }
   }

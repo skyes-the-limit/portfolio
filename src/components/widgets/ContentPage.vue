@@ -19,12 +19,6 @@
           return []
         }
       }
-      /*  Expect cards to be Array of Objects with the following fields:
-            * String date         (creation date of the piece in format YYYY-MM-DD)
-            * String medium       (medium or programs used to create the piece)
-            * String description  (a description of the piece)
-            * String[] imageSources    (image/video sources to display)
-      */
     },
     computed: {
       rows() {
