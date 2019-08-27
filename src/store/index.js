@@ -225,7 +225,7 @@ const programming = [
       "2019-07-06 Drawing Machine (9).png", "2019-07-06 Drawing Machine (10).png",
       "2019-07-06 Drawing Machine (11).png", "2019-07-06 Drawing Machine (12).png",
       "2019-07-06 Drawing Machine (13).png"],
-    videoSources: ["353704125"], // TODO: fix video artifacts & re-upload
+    videoSources: ["356239943"],
     github: "creative-coding/tree/master/DrawingMachine"
   },
   {
@@ -247,7 +247,7 @@ const programming = [
     date: "12-13-18",
     medium: "Java",
     description: "A simplified animation editing interface.",
-    imageSources: ["2018-12-13 Animator.png"], // TODO: record additional stills and/or video demo
+    imageSources: ["2018-12-13 Animator.png"],
     github: "animator",
     videoSources: []
   },
