@@ -75,6 +75,8 @@
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
+    display: flex;
+    justify-content: center;
   }
 
   .carousel__activator:checked ~ .carousel__indicators .carousel__indicator {
@@ -175,7 +177,7 @@
 
   h1 {
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 44px;
     line-height: 50px;
     text-align: center;
     margin: 0;
@@ -183,6 +185,7 @@
 
   a {
     text-decoration: none;
+    width: 80%
   }
 
   .carousel__indicator {
