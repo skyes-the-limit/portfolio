@@ -23,7 +23,6 @@
 
 <script>
   let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
   export default {
     name: "Modal",
@@ -48,7 +47,7 @@
       return {
         selectedIndex: 0,
         playerWidth: 0.8 * w,
-        playerHeight: 0.8 * h,
+        playerHeight: 0.6 * w,
         options: {},
         loop: true,
         autoplay: false

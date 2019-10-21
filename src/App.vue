@@ -1,24 +1,33 @@
 <template>
   <div id="app">
-    <nav-bar />
+    <nav-bar-mobile v-if="isMobile" />
+    <nav-bar v-else />
     <router-view />
   </div>
 </template>
 
 <script>
   import Vue from 'vue'
+  import { isMobile } from 'mobile-device-detect';
   import VueVimeoPlayer from 'vue-vimeo-player'
   import NavBar from '@/components/NavBar.vue';
   import router from '@/router/'
+  import NavBarMobile from "@/components/NavBarMobile";
 
   Vue.use(VueVimeoPlayer);
 
   export default {
     name: 'App',
     components: {
+      NavBarMobile,
       NavBar
     },
-    router: router
+    router: router,
+    data() {
+      return {
+        isMobile: isMobile
+      }
+    }
   }
 </script>
 
