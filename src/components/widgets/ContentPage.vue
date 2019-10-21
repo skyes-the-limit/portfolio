@@ -1,17 +1,26 @@
 <template>
   <div class="content-container">
-    <div v-for="(row, index) in rows" :key="index" class="preview-row">
-      <preview-card v-for="card in row" :key="card.date" :content="card" />
+    <div v-if="isMobile" v-for="card in cards" :key="card.date" class="preview-row">
+      <preview-card :content="card" />
+    </div>
+    <div v-else v-for="(row, index) in rows" :key="index" class="preview-row">
+      <preview-card v-for`="card in row" :key="card.date" :content="card" />
     </div>
   </div>
 </template>
 
 <script>
+  import { isMobile } from 'mobile-device-detect';
   import PreviewCard from '@/components/widgets/PreviewCard';
 
   export default {
     name: "ContentPage",
     components: { PreviewCard },
+    data() {
+      return {
+        isMobile: isMobile
+      }
+    },
     props: {
       cards: {
         type: Array,
