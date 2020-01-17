@@ -1,20 +1,13 @@
 <template>
   <div class="content-container">
-    <div v-if="isMobile">
-      <div v-for="card in cards" :key="card.date" class="preview-row">
-        <preview-card :content="card"/>
-      </div>
-    </div>
-    <div v-else>
-      <div v-for="(row, index) in rows" :key="index" class="preview-row">
-        <preview-card v-for="card in row" :key="card.date" :content="card"/>
-      </div>
+    <div v-for="card in cards" :key="card.date" class="card">
+      <preview-card :content="card"/>
     </div>
   </div>
 </template>
 
 <script>
-  import { isMobile } from 'mobile-device-detect';
+  import {isMobile} from 'mobile-device-detect';
   import PreviewCard from '@/components/widgets/PreviewCard';
 
   export default {
@@ -57,8 +50,13 @@
 </script>
 
 <style scoped>
-  .preview-row {
+  .content-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .card {
+    margin-top: 2vw;
   }
 </style>
