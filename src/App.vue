@@ -13,7 +13,9 @@
   import NavBar from '@/components/NavBar.vue';
   import router from '@/router/'
   import NavBarMobile from "@/components/NavBarMobile";
+  import Vue2TouchEvents from 'vue2-touch-events'
 
+  Vue.use(Vue2TouchEvents);
   Vue.use(VueVimeoPlayer);
 
   export default {

@@ -1,5 +1,6 @@
 <template>
-  <ul class="carousel">
+  <ul class="carousel" v-touch:swipe="handleSwipe">
+
     <input v-for="(slide, index) in slides" :id="slide.page" :key="slide.page"
            v-model="selectedIndex" :value="index"
            class="carousel__activator" type="radio" name="activator">
@@ -44,6 +45,18 @@
     data() {
       return {
         selectedIndex: 0
+      }
+    },
+    methods: {
+      handleSwipe(direction) {
+        switch (direction){
+          case "left": // increment (swipe left = drag right)
+            this.selectedIndex === this.slides.length - 1 ? this.selectedIndex = 0 : this.selectedIndex ++;
+            break;
+          case "right": // decrement (swipe right = drag left)
+            this.selectedIndex === 0 ? this.selectedIndex = this.slides.length - 1 : this.selectedIndex--;
+            break;
+        }
       }
     }
   }
