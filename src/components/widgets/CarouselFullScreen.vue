@@ -211,4 +211,7 @@
     background-position: center;
   }
 
+  body {
+    overflow: hidden;
+  }
 </style>
