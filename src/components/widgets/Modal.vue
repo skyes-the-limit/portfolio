@@ -1,7 +1,7 @@
 <template>
   <div>
     <transition name="modal">
-      <div v-if="showModal">
+      <div v-if="showModal" v-touch:swipe="handleSwipe">
         <div class="overlay" @click.self="closeModal()">
           <div class="modal">
             <template v-if="(content.imageSources.length + content.videoSources.length) > 1">
@@ -89,6 +89,16 @@
           this.selectedIndex = (this.content.videoSources.length + this.content.imageSources.length - 1);
         } else {
           this.selectedIndex--;
+        }
+      },
+      handleSwipe(direction) {
+        switch (direction) {
+          case "left": // increment (swipe left = drag right)
+            this.increment();
+            break;
+          case "right": // decrement (swipe right = drag left)
+            this.decrement();
+            break;
         }
       },
       imageSrc(source) {
