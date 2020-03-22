@@ -47,16 +47,40 @@
         selectedIndex: 0
       }
     },
+    created() {
+      this.$nextTick(() => {
+        window.addEventListener('keydown', this.handleKey);
+      });
+    },
+    destroyed() {
+      window.removeEventListener('keydown', this.handleKey);
+    },
     methods: {
       handleSwipe(direction) {
         switch (direction){
-          case "left": // increment (swipe left = drag right)
-            this.selectedIndex === this.slides.length - 1 ? this.selectedIndex = 0 : this.selectedIndex ++;
+          case "left":
+            this.increment();
             break;
-          case "right": // decrement (swipe right = drag left)
-            this.selectedIndex === 0 ? this.selectedIndex = this.slides.length - 1 : this.selectedIndex--;
+          case "right":
+            this.decrement();
             break;
         }
+      },
+      handleKey(event) {
+        switch (event.code) {
+          case "ArrowLeft":
+            this.decrement();
+            break;
+          case "ArrowRight":
+            this.increment();
+            break;
+        }
+      },
+      increment() {
+        this.selectedIndex === this.slides.length - 1 ? this.selectedIndex = 0 : this.selectedIndex ++;
+      },
+      decrement() {
+        this.selectedIndex === 0 ? this.selectedIndex = this.slides.length - 1 : this.selectedIndex--;
       }
     }
   }

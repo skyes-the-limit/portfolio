@@ -76,8 +76,18 @@
         return null;
       }
     },
+    created() {
+      this.$nextTick(() => {
+        window.addEventListener('keydown', this.handleKey);
+      });
+    },
+    destroyed() {
+      window.removeEventListener('keydown', this.handleKey);
+    },
     methods: {
       increment() {
+        if (!this.showModal) { return }
+
         if (this.selectedIndex === (this.content.videoSources.length + this.content.imageSources.length - 1)) {
           this.selectedIndex = 0;
         } else {
@@ -85,6 +95,8 @@
         }
       },
       decrement() {
+        if (!this.showModal) { return }
+
         if (this.selectedIndex === 0) {
           this.selectedIndex = (this.content.videoSources.length + this.content.imageSources.length - 1);
         } else {
@@ -93,11 +105,24 @@
       },
       handleSwipe(direction) {
         switch (direction) {
-          case "left": // increment (swipe left = drag right)
+          case "left":
             this.increment();
             break;
-          case "right": // decrement (swipe right = drag left)
+          case "right":
             this.decrement();
+            break;
+        }
+      },
+      handleKey(event) {
+        switch (event.code) {
+          case "ArrowLeft":
+            this.decrement();
+            break;
+          case "ArrowRight":
+            this.increment();
+            break;
+          case "Escape":
+            this.closeModal();
             break;
         }
       },
