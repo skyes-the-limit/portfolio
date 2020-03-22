@@ -1,6 +1,6 @@
 <template>
   <div class="preview-card">
-    <template v-if="content.previewSource">
+    <template>
       <img :src="imageSrc" @click="showModal = !showModal">
       <div class="info">
         <span>{{ content.date }}</span>
@@ -58,25 +58,53 @@
     cursor: pointer;
   }
 
-  /*
-  .img-desktop {
-    width: 22vw;
-    height: 22vw;
-  }
-
-  .img-mobile {
-    width: 80vw;
-    height: 80vw;
-  }
-  */
-
   .preview-card {
     display: inline;
-    margin: 1.5vw 0;
+    margin: 1vw;
   }
 
   .info {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 599px) {
+    img {
+      width: 90vw;
+      height: 90vw;
+    }
+    .preview-card {
+      width: 90vw;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    img {
+      width: 45vw;
+      height: 45vw;
+    }
+    .preview-card {
+      width: 45vw;
+    }
+  }
+
+  @media only screen and (min-width: 850px) {
+    img {
+      width: 30vw;
+      height: 30vw;
+    }
+    .preview-card {
+      width: 30vw;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    img {
+      width: 22vw;
+      height: 22vw;
+    }
+    .preview-card {
+      width: 22vw;
+    }
   }
 </style>

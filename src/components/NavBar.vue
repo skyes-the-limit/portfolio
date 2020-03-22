@@ -105,6 +105,9 @@
       position: absolute;
       left: 0.5rem;
     }
+    .line-style {
+      background-color: #FFFFFF;
+    }
   }
 
   @media only screen and (min-width: 600px) {
