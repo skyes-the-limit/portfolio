@@ -124,8 +124,6 @@
           case "Escape":
             this.closeModal();
             break;
-          default:
-            console.log(event.code)
         }
       },
       imageSrc(source) {
