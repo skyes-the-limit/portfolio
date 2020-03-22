@@ -17,7 +17,7 @@
   </div>
   <div v-else class="nav-bar">
     <div class="burger-button">
-      <Slide>
+      <Slide :closeOnNavigation="true">
         <router-link :to="{ name: 'Home' }">
           <span>Home</span>
         </router-link>
@@ -78,6 +78,7 @@
   .nav-bar {
     background-color: #303030;
     height: 8vh;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +92,18 @@
     font-weight: bolder;
     border-right: 1px solid #DDDDDD;
   }
+  .burger-button {
+    position: absolute;
+    left: 0.5rem;
+    top: 2vh;
+    visibility: hidden;
+  }
+
+  @media only screen and (max-width: 325px) {
+    .nav-bar__logo {
+      font-size: 24px;
+    }
+  }
 
   @media only screen and (max-width: 599px) {
     .nav-bar {
@@ -102,27 +115,17 @@
       border: none;
     }
     .burger-button {
-      position: absolute;
-      left: 0.5rem;
-    }
-    .line-style {
-      background-color: #FFFFFF;
+      visibility: visible;
     }
   }
 
   @media only screen and (min-width: 600px) {
-    .nav-bar {
-      font-size: 16px;
-    }
     .nav-bar a {
       padding: 0 0.5rem;
     }
   }
 
   @media only screen and (min-width: 696px) {
-    .nav-bar {
-      font-size: 16px;
-    }
     .nav-bar a {
       padding: 0 1rem;
     }
@@ -135,5 +138,17 @@
     .nav-bar a {
       padding: 0 2rem;
     }
+  }
+</style>
+<style>
+  .bm-burger-button {
+    left: 0;
+    top: 0;
+  }
+  .bm-burger-bars {
+    background-color: #FFFFFF;
+  }
+  .bm-item-list {
+    color: #303030;
   }
 </style>

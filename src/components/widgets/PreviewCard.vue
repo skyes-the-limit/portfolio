@@ -68,7 +68,7 @@
     justify-content: space-between;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (min-width: 0px) {
     img {
       width: 90vw;
       height: 90vw;
