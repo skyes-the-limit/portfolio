@@ -1,7 +1,7 @@
 <template>
   <div class="preview-card">
-    <template v-if="content.previewSource">
-      <img :src="imageSrc" @click="showModal = !showModal" v-bind:class="{ 'img-mobile': isMobile, 'img-desktop': !isMobile }">
+    <template>
+      <img :src="imageSrc" @click="showModal = !showModal">
       <div class="info">
         <span>{{ content.date }}</span>
         <span>{{ content.medium }}</span>
@@ -12,7 +12,6 @@
 </template>
 
 <script>
-  import { isMobile } from 'mobile-device-detect';
   import Modal from './Modal';
 
   export default {
@@ -35,8 +34,7 @@
     },
     data() {
       return {
-        showModal: false,
-        isMobile: isMobile
+        showModal: false
       }
     },
     computed: {
@@ -60,23 +58,53 @@
     cursor: pointer;
   }
 
-  .img-desktop {
-    width: 22vw;
-    height: 22vw;
-  }
-
-  .img-mobile {
-    width: 80vw;
-    height: 80vw;
-  }
-
   .preview-card {
     display: inline;
-    margin: 1.5vw 0;
+    margin: 1vw;
   }
 
   .info {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media only screen and (min-width: 0px) {
+    img {
+      width: 90vw;
+      height: 90vw;
+    }
+    .preview-card {
+      width: 90vw;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    img {
+      width: 45vw;
+      height: 45vw;
+    }
+    .preview-card {
+      width: 45vw;
+    }
+  }
+
+  @media only screen and (min-width: 850px) {
+    img {
+      width: 30vw;
+      height: 30vw;
+    }
+    .preview-card {
+      width: 30vw;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    img {
+      width: 22vw;
+      height: 22vw;
+    }
+    .preview-card {
+      width: 22vw;
+    }
   }
 </style>
