@@ -1,7 +1,7 @@
 <template>
   <div class="preview-card">
     <template v-if="content.previewSource">
-      <img :src="imageSrc" @click="showModal = !showModal" v-bind:class="{ 'img-mobile': isMobile, 'img-desktop': !isMobile }">
+      <img :src="imageSrc" @click="showModal = !showModal">
       <div class="info">
         <span>{{ content.date }}</span>
         <span>{{ content.medium }}</span>
@@ -12,7 +12,6 @@
 </template>
 
 <script>
-  import { isMobile } from 'mobile-device-detect';
   import Modal from './Modal';
 
   export default {
@@ -35,8 +34,7 @@
     },
     data() {
       return {
-        showModal: false,
-        isMobile: isMobile
+        showModal: false
       }
     },
     computed: {
@@ -60,6 +58,7 @@
     cursor: pointer;
   }
 
+  /*
   .img-desktop {
     width: 22vw;
     height: 22vw;
@@ -69,6 +68,7 @@
     width: 80vw;
     height: 80vw;
   }
+  */
 
   .preview-card {
     display: inline;

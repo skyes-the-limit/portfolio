@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "mobile-device-detect": "^0.3.3",
     "vue": "^2.6.10",
     "vue-burger-menu": "^2.0.3",
     "vue-pdf": "^4.0.8",

@@ -7,7 +7,6 @@
 
 <script>
   import Vue from 'vue'
-  import { isMobile } from 'mobile-device-detect';
   import VueVimeoPlayer from 'vue-vimeo-player'
   import NavBar from '@/components/NavBar.vue';
   import router from '@/router/'
@@ -21,12 +20,7 @@
     components: {
       NavBar
     },
-    router: router,
-    data() {
-      return {
-        isMobile: isMobile
-      }
-    }
+    router: router
   }
 </script>
 
