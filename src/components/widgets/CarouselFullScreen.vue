@@ -58,10 +58,10 @@
     methods: {
       handleSwipe(direction) {
         switch (direction){
-          case "left": // increment (swipe left = drag right)
+          case "left":
             this.increment();
             break;
-          case "right": // decrement (swipe right = drag left)
+          case "right":
             this.decrement();
             break;
         }
