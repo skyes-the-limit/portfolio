@@ -267,7 +267,8 @@ const programming = [
   {
     date: "12-4-2019",
     medium: "NativeScript.JS",
-    description: "",
+    description: "Prototype for a social event planning app. " +
+      "Made in collaboration with Shravya Raj, Clara Kim & Sunny Lee.",
     previewSource: "2019-12-14 You In Preview.png",
     imageSources: ["2019-12-14 You In (1).jpg", "2019-12-14 You In (2).jpg", "2019-12-14 You In (3).jpg",
       "2019-12-14 You In (4).jpg", "2019-12-14 You In (5).jpg", "2019-12-14 You In (6).jpg",
