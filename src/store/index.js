@@ -234,15 +234,47 @@ const videography = [
   }
 ];
 const programming = [
-  // {
-  //   date: "12-4-2019",
-  //   medium: "NativeScript.JS",
-  //   description: "",
-  //   previewSource: "", // TODO
-  //   imageSources: [],
-  //   videoSources: [],
-  //   github: "you-in"
-  // },
+  {
+    date: "4-7-2020",
+    medium: "React.JS",
+    description: "Web tool for restaurants to manage their digital presence.",
+    previewSource: "2020-04-07 Toastweb Digital Presence Preview.png",
+    imageSources: ["2020-04-07 Toastweb Digital Presence.png"],
+    videoSources: [],
+    github: ""
+  },
+  {
+    date: "3-20-2020",
+    medium: "Swift",
+    description: "Contributions to the Toast Takeout iOS app, including contactless delivery, curbside pickup, " +
+      "confirmation screen order map, & delivery feedback.",
+    previewSource: "2020-03-20 Toast Takeout Preview.png",
+    imageSources: ["2020-03-20 Toast Takeout (1).png", "2020-03-20 Toast Takeout (2).png",
+      "2020-03-20 Toast Takeout (3).png", "2020-03-20 Toast Takeout (4).png", "2020-03-20 Toast Takeout (5).png"],
+    videoSources: [],
+    github: ""
+  },
+  {
+    date: "1-14-2020",
+    medium: "React.JS",
+    description: "Web tool for configuring Toast Drop Points.",
+    previewSource: "2020-01-14 Outpost Config Admin Preview.png",
+    imageSources: ["2020-01-14 Outpost Config Admin (1).png", "2020-01-14 Outpost Config Admin (2).png",
+      "2020-01-14 Outpost Config Admin (3).png", "2020-01-14 Outpost Config Admin (4).png"],
+    videoSources: [],
+    github: ""
+  },
+  {
+    date: "12-4-2019",
+    medium: "NativeScript.JS",
+    description: "",
+    previewSource: "2019-12-14 You In Preview.png",
+    imageSources: ["2019-12-14 You In (1).jpg", "2019-12-14 You In (2).jpg", "2019-12-14 You In (3).jpg",
+      "2019-12-14 You In (4).jpg", "2019-12-14 You In (5).jpg", "2019-12-14 You In (6).jpg",
+      "2019-12-14 You In (7).jpg", "2019-12-14 You In (8).jpg", "2019-12-14 You In (9).jpg"],
+    videoSources: [],
+    github: "you-in"
+  },
   {
     date: "7-29-2019",
     medium: "Processing",
@@ -316,7 +348,7 @@ const programming = [
     previewSource: "2018-12-13 Animator Preview.png",
     imageSources: ["2018-12-13 Animator.png"],
     github: "animator",
-    videoSources: [] // TODO: record additional video/images
+    videoSources: []
   },
   {
     date: "6-3-2018",
@@ -324,7 +356,7 @@ const programming = [
     description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
     previewSource: "2018-06-03 Find Drake Preview.png",
     imageSources: ["2018-06-03 Find Drake.png"],
-    videoSources: [] // TODO: record demo at NUVR lab
+    videoSources: []
   },
   {
     date: "3-27-2018",
