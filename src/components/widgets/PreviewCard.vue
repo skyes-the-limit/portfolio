@@ -1,7 +1,7 @@
 <template>
   <div class="preview-card">
     <template>
-      <img :src="imageSrc" @click="showModal = !showModal">
+      <img :src="imageSrc" :alt="content.description" @click="showModal = !showModal">
       <div class="info">
         <span>{{ content.date }}</span>
         <span>{{ content.medium }}</span>
