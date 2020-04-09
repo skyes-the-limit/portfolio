@@ -11,7 +11,7 @@
             <vimeo-player v-if="displayObject.type === 'video'" :video-id="displayObject.source"
                           :player-width="playerWidth" :player-height="playerHeight"
                           :loop="loop" :autoplay="autoplay" />
-            <img v-if="displayObject.type === 'image'" :src="displayObject.source">
+            <img v-if="displayObject.type === 'image'" :src="displayObject.source" :alt="content.description">
             <p>{{ content.description }}</p>
             <a v-if="content.github"
                :href="'https://github.com/ArielleBishop/' + content.github"
