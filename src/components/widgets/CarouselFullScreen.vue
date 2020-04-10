@@ -27,18 +27,13 @@
 </template>
 
 <script>
-  import PropTypes from '@znck/prop-types';
-
   export default {
     name: "CarouselFullScreen",
     props: {
-      slides: PropTypes.arrayOf(
-          PropTypes.shape({
-            page: PropTypes.string,       // page name to route to
-            title: PropTypes.string,      // title description to display
-            imageSrc: PropTypes.string    // source for background-image
-          })
-        )
+      slides: {
+        type: Array,
+        default: []
+      }
     },
     data() {
       return {
