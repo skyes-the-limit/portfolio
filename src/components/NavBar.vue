@@ -24,7 +24,7 @@
         <router-link :to="{ name: 'Illustration' }">
           <span>Illustration</span>
         </router-link>
-        <router-link :to="{ name: 'cgi' }">
+        <router-link :to="{ name: 'CGI' }">
           <span>CGI</span>
         </router-link>
         <router-link :to="{ name: 'Video' }">
