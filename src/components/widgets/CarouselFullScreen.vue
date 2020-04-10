@@ -81,7 +81,7 @@
 
 <style lang="scss" scoped>
   .carousel {
-    height: 92vh;
+    height: calc(100vh - 56px);
     width: 100vw;
     margin: 0;
     overflow: hidden;

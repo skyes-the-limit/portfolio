@@ -77,25 +77,28 @@
 <style scoped lang="scss">
   .nav-bar {
     background-color: #303030;
-    height: 8vh;
+    height: 56px;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .nav-bar a {
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
   }
+
   .nav-bar__logo {
     font-weight: bolder;
     border-right: 1px solid #DDDDDD;
   }
+
   .burger-button {
     position: absolute;
-    left: 0.5rem;
-    top: 2vh;
+    left: 14px;
+    top: 14px;
     visibility: hidden;
   }
 
@@ -106,7 +109,6 @@
     }
     .nav-bar__logo {
       font-size: 32px;
-      margin-left: 36px;
       border: none;
     }
     .burger-button {
@@ -114,9 +116,10 @@
     }
   }
 
-  @media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 320px) {
     .nav-bar__logo {
       font-size: 24px;
+      margin-left: 50px;
     }
   }
 
