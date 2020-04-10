@@ -1,5 +1,5 @@
 <template>
-  <div v-if="windowWidth >= 600" class="nav-bar">
+  <div v-if="windowWidth >= 485" class="nav-bar">
     <span>
       <span class="nav-bar__logo">
         <router-link :to="{ name: 'Home' }">Arielle Bishop</router-link>
@@ -99,19 +99,14 @@
     visibility: hidden;
   }
 
-  @media only screen and (max-width: 325px) {
-    .nav-bar__logo {
-      font-size: 24px;
-    }
-  }
-
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 484px) {
     .nav-bar {
       justify-content: center;
       align-items: center;
     }
     .nav-bar__logo {
       font-size: 32px;
+      margin-left: 36px;
       border: none;
     }
     .burger-button {
@@ -119,19 +114,25 @@
     }
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (max-width: 300px) {
+    .nav-bar__logo {
+      font-size: 24px;
+    }
+  }
+
+  @media only screen and (min-width: 485px) {
     .nav-bar a {
       padding: 0 0.5rem;
     }
   }
 
-  @media only screen and (min-width: 696px) {
+  @media only screen and (min-width: 600px) {
     .nav-bar a {
       padding: 0 1rem;
     }
   }
 
-  @media only screen and (min-width: 951px) {
+  @media only screen and (min-width: 819px) {
     .nav-bar {
       font-size: 18px;
     }
@@ -140,6 +141,7 @@
     }
   }
 </style>
+
 <style>
   .bm-burger-button {
     left: 0;
