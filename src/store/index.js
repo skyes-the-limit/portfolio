@@ -130,6 +130,56 @@ const cgi = [
     previewSource: "2019-11-05 Interior Preview.png",
     imageSources: ["2019-11-05 Interior (1).png", "2019-11-05 Interior (2).png"]
   },
+
+  {
+    date: "7-29-2019",
+    medium: "Processing",
+    description: "Using google image search as an input, render images via various shapes.",
+    previewSource: "2019-07-29 Simple Image Processing Preview.png",
+    imageSources: ["2019-07-29 Simple Image Processing (1).png", "2019-07-29 Simple Image Processing (2).png",
+      "2019-07-29 Simple Image Processing (3).png", "2019-07-29 Simple Image Processing (4).png",
+      "2019-07-29 Simple Image Processing (5).png", "2019-07-29 Simple Image Processing (6).png"],
+    github: "creative-coding/tree/master/OutsideData"
+  },
+  {
+    date: "7-26-2019",
+    medium: "Processing",
+    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
+    previewSource: "2019-07-26 Austauschstadt Preview.png",
+    imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png",
+      "2019-07-26 Austauschstadt (3).png", "2019-07-26 Austauschstadt (4).png",
+      "2019-07-26 Austauschstadt (5).png", "2019-07-26 Austauschstadt (6).png",
+      "2019-07-26 Austauschstadt (7).png"],
+    videoSources: ["353297101", "355991818"],
+    collab: "Kriti Gurubacharya & Maggie Van Nortwick",
+    github: "creative-coding/tree/master/FacadePortal"
+  },
+  {
+    date: "7-14-2019",
+    medium: "Processing",
+    description: "Tessellating hexagons based on Perlin Noise.",
+    previewSource: "2019-07-14 Generative Tessellations Preview.png",
+    imageSources: ["2019-07-14 Generative Tessellations (1).png", "2019-07-14 Generative Tessellations (2).png",
+      "2019-07-14 Generative Tessellations (3).png", "2019-07-14 Generative Tessellations (4).png",
+      "2019-07-14 Generative Tessellations (5).png", "2019-07-14 Generative Tessellations (6).png"],
+    videoSources: ["353274180"],
+    github: "creative-coding/tree/master/GenerativeDesign"
+  },
+  {
+    date: "7-6-2019",
+    medium: "Processing",
+    description: "Allows users to draw with complex polygons.",
+    previewSource: "2019-07-06 Drawing Machine Preview.png",
+    imageSources: ["2019-07-06 Drawing Machine (1).png", "2019-07-06 Drawing Machine (2).png",
+      "2019-07-06 Drawing Machine (3).png", "2019-07-06 Drawing Machine (4).png",
+      "2019-07-06 Drawing Machine (5).png", "2019-07-06 Drawing Machine (6).png",
+      "2019-07-06 Drawing Machine (7).png", "2019-07-06 Drawing Machine (8).png",
+      "2019-07-06 Drawing Machine (9).png", "2019-07-06 Drawing Machine (10).png",
+      "2019-07-06 Drawing Machine (11).png", "2019-07-06 Drawing Machine (12).png",
+      "2019-07-06 Drawing Machine (13).png"],
+    videoSources: ["356239943"],
+    github: "creative-coding/tree/master/DrawingMachine"
+  },
   {
     date: "12-14-2018",
     medium: "Maya",
@@ -248,57 +298,8 @@ const software = [
     github: "you-in"
   },
   {
-    date: "7-29-2019",
-    medium: "Processing",
-    description: "Using google image search as an input, render images via various shapes.",
-    previewSource: "2019-07-29 Simple Image Processing Preview.png",
-    imageSources: ["2019-07-29 Simple Image Processing (1).png", "2019-07-29 Simple Image Processing (2).png",
-      "2019-07-29 Simple Image Processing (3).png", "2019-07-29 Simple Image Processing (4).png",
-      "2019-07-29 Simple Image Processing (5).png", "2019-07-29 Simple Image Processing (6).png"],
-    github: "creative-coding/tree/master/OutsideData"
-  },
-  {
-    date: "7-26-2019",
-    medium: "Processing",
-    description: "Made in processing and then used to control the LED facade on the Ars Electronica Center in Linz, Austria.",
-    previewSource: "2019-07-26 Austauschstadt Preview.png",
-    imageSources: ["2019-07-26 Austauschstadt (1).png", "2019-07-26 Austauschstadt (2).png",
-      "2019-07-26 Austauschstadt (3).png", "2019-07-26 Austauschstadt (4).png",
-      "2019-07-26 Austauschstadt (5).png", "2019-07-26 Austauschstadt (6).png",
-      "2019-07-26 Austauschstadt (7).png"],
-    videoSources: ["353297101", "355991818"],
-    collab: "Kriti Gurubacharya & Maggie Van Nortwick",
-    github: "creative-coding/tree/master/FacadePortal"
-  },
-  {
-    date: "7-14-2019",
-    medium: "Processing",
-    description: "Tessellating hexagons based on Perlin Noise.",
-    previewSource: "2019-07-14 Generative Tessellations Preview.png",
-    imageSources: ["2019-07-14 Generative Tessellations (1).png", "2019-07-14 Generative Tessellations (2).png",
-      "2019-07-14 Generative Tessellations (3).png", "2019-07-14 Generative Tessellations (4).png",
-      "2019-07-14 Generative Tessellations (5).png", "2019-07-14 Generative Tessellations (6).png"],
-    videoSources: ["353274180"],
-    github: "creative-coding/tree/master/GenerativeDesign"
-  },
-  {
-    date: "7-6-2019",
-    medium: "Processing",
-    description: "Allows users to draw with complex polygons.",
-    previewSource: "2019-07-06 Drawing Machine Preview.png",
-    imageSources: ["2019-07-06 Drawing Machine (1).png", "2019-07-06 Drawing Machine (2).png",
-      "2019-07-06 Drawing Machine (3).png", "2019-07-06 Drawing Machine (4).png",
-      "2019-07-06 Drawing Machine (5).png", "2019-07-06 Drawing Machine (6).png",
-      "2019-07-06 Drawing Machine (7).png", "2019-07-06 Drawing Machine (8).png",
-      "2019-07-06 Drawing Machine (9).png", "2019-07-06 Drawing Machine (10).png",
-      "2019-07-06 Drawing Machine (11).png", "2019-07-06 Drawing Machine (12).png",
-      "2019-07-06 Drawing Machine (13).png"],
-    videoSources: ["356239943"],
-    github: "creative-coding/tree/master/DrawingMachine"
-  },
-  {
     date: "6-28-2019",
-    medium: "Java | Vue.JS | PostgreSQL",
+    medium: "Java & Vue.JS",
     description: "Internal tool designed and implemented during co-op at Chewy for managing their Ship Route data.",
     previewSource: "2019-06-28 Ship Route Manager Preview.png",
     imageSources: ["2019-06-28 Ship Route Manager (1).png", "2019-06-28 Ship Route Manager (2).png",
