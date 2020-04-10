@@ -265,7 +265,7 @@ const software = [
     medium: "React.JS",
     description: "Web tool for restaurants to manage their digital presence.",
     previewSource: "2020-04-07 Toastweb Digital Presence Preview.png",
-    imageSources: ["2020-04-07 Toastweb Digital Presence.png"]
+    imageSources: ["2020-04-07 Toastweb Digital Presence (1).png", "2020-04-07 Toastweb Digital Presence (2).png"]
   },
   {
     date: "3-20-2020",
