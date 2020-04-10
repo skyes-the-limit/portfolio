@@ -93,7 +93,7 @@
       increment() {
         if (!this.showModal) { return }
 
-        if (this.selectedIndex === (this.content.videoSources.length + this.content.imageSources.length - 1)) {
+        if (this.selectedIndex === ((this.content.videoSources ? this.content.videoSources.length : 0) + (this.content.imageSources ? this.content.imageSources.length : 0) - 1)) {
           this.selectedIndex = 0;
         } else {
           this.selectedIndex++;
@@ -103,7 +103,7 @@
         if (!this.showModal) { return }
 
         if (this.selectedIndex === 0) {
-          this.selectedIndex = (this.content.videoSources.length + this.content.imageSources.length - 1);
+          this.selectedIndex = ((this.content.videoSources ? this.content.videoSources.length : 0) + (this.content.imageSources ? this.content.imageSources.length : 0) - 1);
         } else {
           this.selectedIndex--;
         }
