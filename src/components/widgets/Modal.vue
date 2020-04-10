@@ -4,7 +4,7 @@
       <div v-if="showModal" v-touch:swipe="handleSwipe">
         <div class="overlay" @click.self="closeModal()">
           <div class="modal">
-            <template v-if="(content.imageSources.length + content.videoSources.length) > 1">
+            <template v-if="((content.imageSources ? content.imageSources.length : 0) + (content.videoSources ? content.videoSources.length : 0)) > 1">
               <label class="carousel__control carousel__control--backward" @click="decrement()" />
               <label class="carousel__control carousel__control--forward" @click="increment()" />
             </template>
@@ -13,6 +13,7 @@
                           :loop="loop" :autoplay="autoplay" />
             <img v-if="displayObject.type === 'image'" :src="displayObject.source" :alt="content.description">
             <p>{{ content.description }}</p>
+            <p v-if="content.collab">Made in collaboration with {{ content.collab }}.</p>
             <a v-if="content.github"
                :href="'https://github.com/ArielleBishop/' + content.github"
                target="blank"
@@ -59,19 +60,19 @@
     },
     computed: {
       displayObject() {
-        /* Returns object in the format of:
-          type: String  ["image" or "video"]
-          source: imageSrc for images or vimeo id for videos
+        /* Returns object in the shape of:
+          type: String    (one of "image" or "video")
+          source: String  (imageSrc for images or vimeo id for videos)
          */
         let index = this.selectedIndex;
-        if (index < this.content.videoSources.length) {
+        if (index < (this.content.videoSources ? this.content.videoSources.length : 0)) {
           return {
             type: 'video',
             source: this.content.videoSources[index]
           }
         }
-        index -= this.content.videoSources.length;
-        if (index < this.content.imageSources.length) {
+        index -= (this.content.videoSources ? this.content.videoSources.length : 0);
+        if (index < (this.content.imageSources ? this.content.imageSources.length : 0)) {
           return {
             type: 'image',
             source: this.imageSrc(this.content.imageSources[index])

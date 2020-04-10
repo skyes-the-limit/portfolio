@@ -27,20 +27,18 @@
 </template>
 
 <script>
+  import PropTypes from '@znck/prop-types';
+
   export default {
     name: "CarouselFullScreen",
     props: {
-      slides: {
-        type: Array,
-        default: function () {
-          return []
-        }
-      }
-      /*  Expect slides to be Array of Objects with the following fields:
-          * page: String      (page name to route to)
-          * title: String     (title description to display)
-          * imageSrc: String  (source for background-image)
-      */
+      slides: PropTypes.arrayOf(
+          PropTypes.shape({
+            page: PropTypes.string,       // page name to route to
+            title: PropTypes.string,      // title description to display
+            imageSrc: PropTypes.string    // source for background-image
+          })
+        )
     },
     data() {
       return {
