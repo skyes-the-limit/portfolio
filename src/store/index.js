@@ -3,7 +3,6 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex);
 
-// {
 //   String date                       (creation date of the piece in format MM-DD-YYYY)
 //   String medium                     (medium or programs used to create the piece)
 //   String description                (a description of the piece)
@@ -12,7 +11,6 @@ Vue.use(Vuex);
 //   String[] videoSources  [OPTIONAL] (videoIds for vimeo plugin)
 //   String collab          [OPTIONAL] (list of coolaborators)
 //   String github          [OPTIONAL] (end of link to github repo/folder)
-// }
 
 const illustration = [
   {
