@@ -6,9 +6,9 @@
       </span>
       <span>
         <router-link :to="{ name: 'Illustration' }">Illustration</router-link>
-        <router-link :to="{ name: 'Animation' }">Animation</router-link>
-        <router-link :to="{ name: 'Videography' }">Videography</router-link>
-        <router-link :to="{ name: 'Programming' }">Programming</router-link>
+        <router-link :to="{ name: 'CGI' }">CGI</router-link>
+        <router-link :to="{ name: 'Video' }">Video</router-link>
+        <router-link :to="{ name: 'Software' }">Software</router-link>
       </span>
     </span>
     <span>
@@ -24,14 +24,14 @@
         <router-link :to="{ name: 'Illustration' }">
           <span>Illustration</span>
         </router-link>
-        <router-link :to="{ name: 'Animation' }">
-          <span>Animation</span>
+        <router-link :to="{ name: 'cgi' }">
+          <span>CGI</span>
         </router-link>
-        <router-link :to="{ name: 'Videography' }">
-          <span>Videography</span>
+        <router-link :to="{ name: 'Video' }">
+          <span>Video</span>
         </router-link>
-        <router-link :to="{ name: 'Programming' }">
-          <span>Programming</span>
+        <router-link :to="{ name: 'Software' }">
+          <span>Software</span>
         </router-link>
         <router-link :to="{ name: 'About' }">
           <span>About</span>

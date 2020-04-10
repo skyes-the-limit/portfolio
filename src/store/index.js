@@ -115,7 +115,7 @@ const illustration = [
     imageSources: ["2016-03-22 Dawkins.png"]
   }
 ];
-const animation = [
+const cgi = [
   {
     date: "12-12-2019",
     medium: "Maya",
@@ -173,7 +173,7 @@ const animation = [
     imageSources: ["2016-10-07 Lamp.jpg"]
   }
 ];
-const videography = [
+const video = [
   {
     date: "9-25-2018",
     medium: "Whiteboard & Premiere",
@@ -211,7 +211,7 @@ const videography = [
     videoSources: ["352082020"]
   }
 ];
-const programming = [
+const software = [
   {
     date: "4-7-2020",
     medium: "React.JS",
@@ -338,14 +338,14 @@ const programming = [
 export default new Vuex.Store({
   state: {
     illustration: illustration,
-    animation: animation,
-    videography: videography,
-    programming: programming
+    cgi: cgi,
+    video: video,
+    software: software
   },
   getters: {
     illustration: state => state.illustration,
-    animation: state => state.animation,
-    videography: state => state.videography,
-    programming: state => state.programming
+    cgi: state => state.cgi,
+    video: state => state.video,
+    software: state => state.software
   }
 });
