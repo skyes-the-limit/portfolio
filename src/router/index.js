@@ -55,7 +55,7 @@ export default new VueRouter({
       component: ContentPage,
       props: { cards: store.getters.cgi },
       meta: {
-        title: 'Arielle Bishop - 3D Modeling',
+        title: 'Arielle Bishop - CGI',
         metaTags: [
           {
             name: 'description',
