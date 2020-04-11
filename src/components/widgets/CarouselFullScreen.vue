@@ -32,15 +32,8 @@
     props: {
       slides: {
         type: Array,
-        default: function () {
-          return []
-        }
+        default: []
       }
-      /*  Expect slides to be Array of Objects with the following fields:
-          * page: String      (page name to route to)
-          * title: String     (title description to display)
-          * imageSrc: String  (source for background-image)
-      */
     },
     data() {
       return {
@@ -88,7 +81,7 @@
 
 <style lang="scss" scoped>
   .carousel {
-    height: 92vh;
+    height: calc(100vh - 56px);
     width: 100vw;
     margin: 0;
     overflow: hidden;

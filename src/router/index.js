@@ -47,10 +47,10 @@ export default new VueRouter({
       }
     },
     {
-      path: '/animation',
-      name: 'Animation',
+      path: '/cgi',
+      name: 'CGI',
       component: ContentPage,
-      props: { cards: store.getters.animation },
+      props: { cards: store.getters.cgi },
       meta: {
         title: 'Arielle Bishop - 3D Modeling',
         metaTags: [
@@ -66,10 +66,10 @@ export default new VueRouter({
       }
     },
     {
-      path: '/videography',
-      name: 'Videography',
+      path: '/video',
+      name: 'Video',
       component: ContentPage,
-      props: { cards: store.getters.videography },
+      props: { cards: store.getters.video },
       meta: {
         title: 'Arielle Bishop - Video',
         metaTags: [
@@ -85,20 +85,20 @@ export default new VueRouter({
       }
     },
     {
-      path: '/programming',
-      name: 'Programming',
+      path: '/software',
+      name: 'Software',
       component: ContentPage,
-      props: { cards: store.getters.programming },
+      props: { cards: store.getters.software },
       meta: {
-        title: 'Arielle Bishop - Programming',
+        title: 'Arielle Bishop - Software',
         metaTags: [
           {
             name: 'description',
-            content: 'Collection of Arielle Bishop\'s programming portfolio work.'
+            content: 'Collection of Arielle Bishop\'s software portfolio work.'
           },
           {
             property: 'og:description',
-            content: 'Collection of Arielle Bishop\'s programming portfolio work.'
+            content: 'Collection of Arielle Bishop\'s software portfolio work.'
           }
         ]
       }

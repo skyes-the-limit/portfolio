@@ -1,14 +1,14 @@
 <template>
-  <div v-if="windowWidth >= 600" class="nav-bar">
+  <div v-if="windowWidth >= 485" class="nav-bar">
     <span>
       <span class="nav-bar__logo">
         <router-link :to="{ name: 'Home' }">Arielle Bishop</router-link>
       </span>
       <span>
         <router-link :to="{ name: 'Illustration' }">Illustration</router-link>
-        <router-link :to="{ name: 'Animation' }">Animation</router-link>
-        <router-link :to="{ name: 'Videography' }">Videography</router-link>
-        <router-link :to="{ name: 'Programming' }">Programming</router-link>
+        <router-link :to="{ name: 'CGI' }">CGI</router-link>
+        <router-link :to="{ name: 'Video' }">Video</router-link>
+        <router-link :to="{ name: 'Software' }">Software</router-link>
       </span>
     </span>
     <span>
@@ -24,14 +24,14 @@
         <router-link :to="{ name: 'Illustration' }">
           <span>Illustration</span>
         </router-link>
-        <router-link :to="{ name: 'Animation' }">
-          <span>Animation</span>
+        <router-link :to="{ name: 'CGI' }">
+          <span>CGI</span>
         </router-link>
-        <router-link :to="{ name: 'Videography' }">
-          <span>Videography</span>
+        <router-link :to="{ name: 'Video' }">
+          <span>Video</span>
         </router-link>
-        <router-link :to="{ name: 'Programming' }">
-          <span>Programming</span>
+        <router-link :to="{ name: 'Software' }">
+          <span>Software</span>
         </router-link>
         <router-link :to="{ name: 'About' }">
           <span>About</span>
@@ -77,35 +77,32 @@
 <style scoped lang="scss">
   .nav-bar {
     background-color: #303030;
-    height: 8vh;
+    height: 56px;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .nav-bar a {
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
   }
+
   .nav-bar__logo {
     font-weight: bolder;
     border-right: 1px solid #DDDDDD;
   }
+
   .burger-button {
     position: absolute;
-    left: 0.5rem;
-    top: 2vh;
+    left: 14px;
+    top: 14px;
     visibility: hidden;
   }
 
-  @media only screen and (max-width: 325px) {
-    .nav-bar__logo {
-      font-size: 24px;
-    }
-  }
-
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 484px) {
     .nav-bar {
       justify-content: center;
       align-items: center;
@@ -119,19 +116,26 @@
     }
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (max-width: 320px) {
+    .nav-bar__logo {
+      font-size: 24px;
+      margin-left: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 485px) {
     .nav-bar a {
       padding: 0 0.5rem;
     }
   }
 
-  @media only screen and (min-width: 696px) {
+  @media only screen and (min-width: 600px) {
     .nav-bar a {
       padding: 0 1rem;
     }
   }
 
-  @media only screen and (min-width: 951px) {
+  @media only screen and (min-width: 819px) {
     .nav-bar {
       font-size: 18px;
     }
@@ -140,6 +144,7 @@
     }
   }
 </style>
+
 <style>
   .bm-burger-button {
     left: 0;

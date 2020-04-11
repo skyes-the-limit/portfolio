@@ -4,7 +4,7 @@
       <div v-if="showModal" v-touch:swipe="handleSwipe">
         <div class="overlay" @click.self="closeModal()">
           <div class="modal">
-            <template v-if="(content.imageSources.length + content.videoSources.length) > 1">
+            <template v-if="((content.imageSources ? content.imageSources.length : 0) + (content.videoSources ? content.videoSources.length : 0)) > 1">
               <label class="carousel__control carousel__control--backward" @click="decrement()" />
               <label class="carousel__control carousel__control--forward" @click="increment()" />
             </template>
@@ -12,12 +12,15 @@
                           :player-width="playerWidth" :player-height="playerHeight"
                           :loop="loop" :autoplay="autoplay" />
             <img v-if="displayObject.type === 'image'" :src="displayObject.source" :alt="content.description">
-            <p>{{ content.description }}</p>
-            <a v-if="content.github"
-               :href="'https://github.com/ArielleBishop/' + content.github"
-               target="blank"
-               rel="noopener noreferrer"
-            >Github</a>
+            <div class="annotations">
+              <p>{{ content.description }}</p>
+              <p v-if="content.collab">Made in collaboration with {{ content.collab }}.</p>
+              <a v-if="content.github"
+                :href="'https://github.com/ArielleBishop/' + content.github"
+                target="blank"
+                rel="noopener noreferrer"
+              >Github</a>
+            </div>
           </div>
         </div>
       </div>
@@ -26,7 +29,7 @@
 </template>
 
 <script>
-  let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  let w = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
 
   export default {
     name: "Modal",
@@ -51,7 +54,7 @@
       return {
         selectedIndex: 0,
         playerWidth: 0.8 * w,
-        playerHeight: 0.6 * w,
+        playerHeight: 0.45 * w,
         options: {},
         loop: true,
         autoplay: false
@@ -59,19 +62,19 @@
     },
     computed: {
       displayObject() {
-        /* Returns object in the format of:
-          type: String  ["image" or "video"]
-          source: imageSrc for images or vimeo id for videos
+        /* Returns object in the shape of:
+          type: String    (one of "image" or "video")
+          source: String  (imageSrc for images or vimeo id for videos)
          */
         let index = this.selectedIndex;
-        if (index < this.content.videoSources.length) {
+        if (index < (this.content.videoSources ? this.content.videoSources.length : 0)) {
           return {
             type: 'video',
             source: this.content.videoSources[index]
           }
         }
-        index -= this.content.videoSources.length;
-        if (index < this.content.imageSources.length) {
+        index -= (this.content.videoSources ? this.content.videoSources.length : 0);
+        if (index < (this.content.imageSources ? this.content.imageSources.length : 0)) {
           return {
             type: 'image',
             source: this.imageSrc(this.content.imageSources[index])
@@ -92,7 +95,7 @@
       increment() {
         if (!this.showModal) { return }
 
-        if (this.selectedIndex === (this.content.videoSources.length + this.content.imageSources.length - 1)) {
+        if (this.selectedIndex === ((this.content.videoSources ? this.content.videoSources.length : 0) + (this.content.imageSources ? this.content.imageSources.length : 0) - 1)) {
           this.selectedIndex = 0;
         } else {
           this.selectedIndex++;
@@ -102,7 +105,7 @@
         if (!this.showModal) { return }
 
         if (this.selectedIndex === 0) {
-          this.selectedIndex = (this.content.videoSources.length + this.content.imageSources.length - 1);
+          this.selectedIndex = ((this.content.videoSources ? this.content.videoSources.length : 0) + (this.content.imageSources ? this.content.imageSources.length : 0) - 1);
         } else {
           this.selectedIndex--;
         }
@@ -157,26 +160,28 @@
 
 <style scoped>
   img {
-    display: block;
-    max-width: 80vw;
-    max-height: 80vh;
+    display: table-cell;
+    max-width: calc(100vw - 250px);
+    max-height: 75vh;
     object-fit: contain;
   }
 
-  p {
-    margin: 1em 0 0;
+  .annotations {
+    display: table-caption;
+    caption-side: bottom;
+    background-color: #fff;
+    padding: 0 16px;
+    text-align: center;
   }
 
   .modal {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
+    max-width: calc(100vw - 250px);
+    max-height: 95vh;
+    display: table;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 16px;
     background-color: #fff;
     transition: all 0.2s ease-in;
-    align-items: center;
   }
 
   .fadeIn-enter .modal {
