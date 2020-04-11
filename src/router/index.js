@@ -9,6 +9,9 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
   routes: [
+    { path: '/animation', redirect: '/cgi' },
+    { path: '/videography', redirect: '/video' },
+    { path: '/programming', redirect: '/software' },
     {
       path: '',
       name: 'Home',
