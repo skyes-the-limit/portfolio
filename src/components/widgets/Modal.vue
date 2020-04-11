@@ -12,13 +12,15 @@
                           :player-width="playerWidth" :player-height="playerHeight"
                           :loop="loop" :autoplay="autoplay" />
             <img v-if="displayObject.type === 'image'" :src="displayObject.source" :alt="content.description">
-            <p>{{ content.description }}</p>
-            <p v-if="content.collab">Made in collaboration with {{ content.collab }}.</p>
-            <a v-if="content.github"
-               :href="'https://github.com/ArielleBishop/' + content.github"
-               target="blank"
-               rel="noopener noreferrer"
-            >Github</a>
+            <div class="annotations">
+              <p>{{ content.description }}</p>
+              <p v-if="content.collab">Made in collaboration with {{ content.collab }}.</p>
+              <a v-if="content.github"
+                :href="'https://github.com/ArielleBishop/' + content.github"
+                target="blank"
+                rel="noopener noreferrer"
+              >Github</a>
+            </div>
           </div>
         </div>
       </div>
@@ -27,7 +29,7 @@
 </template>
 
 <script>
-  let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  let w = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
 
   export default {
     name: "Modal",
@@ -52,7 +54,7 @@
       return {
         selectedIndex: 0,
         playerWidth: 0.8 * w,
-        playerHeight: 0.6 * w,
+        playerHeight: 0.45 * w,
         options: {},
         loop: true,
         autoplay: false
@@ -158,26 +160,28 @@
 
 <style scoped>
   img {
-    display: block;
-    max-width: 80vw;
-    max-height: 80vh;
+    display: table-cell;
+    max-width: calc(100vw - 250px);
+    max-height: 75vh;
     object-fit: contain;
   }
 
-  p {
-    margin: 1em 0 0;
+  .annotations {
+    display: table-caption;
+    caption-side: bottom;
+    background-color: #fff;
+    padding: 0 16px;
+    text-align: center;
   }
 
   .modal {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
+    max-width: calc(100vw - 250px);
+    max-height: 95vh;
+    display: table;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 16px;
     background-color: #fff;
     transition: all 0.2s ease-in;
-    align-items: center;
   }
 
   .fadeIn-enter .modal {
