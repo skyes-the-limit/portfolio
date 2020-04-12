@@ -32,6 +32,11 @@
     props: {
       slides: {
         type: Array,
+        /* Expected Array of Objects in the shape:
+          imageSrc: String  source of image asset
+          title: String     Text to display for the page
+          page: String      vue-router name of the page to navigate to
+        */ 
         default: []
       }
     },
@@ -144,12 +149,5 @@
     right: 10px;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-</style>
-<style>
-  body, html {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
   }
 </style>

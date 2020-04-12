@@ -29,8 +29,6 @@
 </template>
 
 <script>
-  let w = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
-
   export default {
     name: "Modal",
     props: {
@@ -53,8 +51,8 @@
     data() {
       return {
         selectedIndex: 0,
-        playerWidth: 0.8 * w,
-        playerHeight: 0.45 * w,
+        playerWidth: 0.8 * window.innerWidth,
+        playerHeight: 0.45 * window.innerWidth,
         options: {},
         loop: true,
         autoplay: false
@@ -153,7 +151,7 @@
 <style scoped>
   img {
     display: table-cell;
-    max-width: calc(100vw - 250px);
+    max-width: calc(100vw - 150px);
     max-height: 75vh;
     object-fit: contain;
   }
@@ -167,7 +165,7 @@
   }
 
   .modal {
-    max-width: calc(100vw - 250px);
+    max-width: calc(100vw - 150px);
     max-height: 95vh;
     display: table;
     margin: 0 auto;

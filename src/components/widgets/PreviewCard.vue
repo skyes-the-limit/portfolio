@@ -1,14 +1,21 @@
 <template>
-  <div class="preview-card">
-    <template>
-      <img :src="imageSrc" :alt="content.description" @click="showModal = !showModal">
-      <div class="info">
-        <span>{{ content.date }}</span>
-        <span>{{ content.medium }}</span>
-      </div>
-      <modal :show-modal.sync="showModal" :content="content" />
-    </template>
-  </div>
+  <v-lazy
+    :options="{
+      threshold: .5
+    }"
+    transition="fade-transition"
+    >
+    <div class="preview-card">
+      <template>
+        <img :src="imageSrc" :alt="content.description" @click="showModal = !showModal">
+        <div class="info">
+          <span>{{ content.date }}</span>
+          <span>{{ content.medium }}</span>
+        </div>
+        <modal :show-modal.sync="showModal" :content="content" />
+      </template>
+    </div>
+  </v-lazy>
 </template>
 
 <script>
