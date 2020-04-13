@@ -89,10 +89,10 @@
         return null;
       },
       playerWidth() {
-        return 0.8 * window.visualViewport.width;
+        return Math.min(0.8 * window.visualViewport.width, window.visualViewport.width - 150);
       },
       playerHeight() { 
-        return 0.45 * window.visualViewport.width;
+        return Math.min(0.45 * window.visualViewport.width, window.visualViewport.width - 150);
       }
     },
     created() {

@@ -102,6 +102,7 @@
 
   @media only screen and (max-width: 484px) {
     .nav-bar {
+      position: sticky;
       justify-content: center;
       align-items: center;
     }
@@ -117,7 +118,6 @@
   @media only screen and (max-width: 320px) {
     .nav-bar__logo {
       font-size: 24px;
-      margin-left: 50px;
     }
   }
 
