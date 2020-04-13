@@ -157,6 +157,7 @@
     display: table-cell;
     max-width: calc(100vw - 150px);
     max-height: 75vh;
+    overflow: hidden;
     object-fit: contain;
   }
 
