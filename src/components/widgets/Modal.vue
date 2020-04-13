@@ -157,7 +157,6 @@
     display: table-cell;
     max-width: calc(100vw - 150px);
     max-height: 75vh;
-    overflow: hidden;
     object-fit: contain;
   }
 
@@ -170,8 +169,8 @@
   }
 
   .modal {
-    max-width: calc(100vw - 150px);
-    max-height: 95vh;
+    width: fit-content;
+    height: fit-content;
     display: table;
     margin: 0 auto;
     padding: 16px;
