@@ -42,10 +42,10 @@
     },
     computed: {
       width() {
-        return window.innerWidth;
+        return window.visualViewport.width;
       },
       height() {
-        return window.innerHeight - 56;
+        return window.visualViewport.height - 56;
       }
     },
     data() {

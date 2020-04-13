@@ -51,8 +51,6 @@
     data() {
       return {
         selectedIndex: 0,
-        playerWidth: 0.8 * window.innerWidth,
-        playerHeight: 0.45 * window.innerWidth,
         options: {},
         loop: true,
         autoplay: false
@@ -89,6 +87,12 @@
           }
         }
         return null;
+      },
+      playerWidth() {
+        return 0.8 * window.visualViewport.width;
+      },
+      playerHeight() { 
+        return 0.45 * window.visualViewport.width;
       }
     },
     created() {

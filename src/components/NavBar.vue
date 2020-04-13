@@ -52,8 +52,7 @@
     components: { Slide },
     data() {
       return {
-        windowWidth: 0,
-        windowHeight: 0
+        windowWidth: 0
       }
     },
     created() {
@@ -67,8 +66,7 @@
     },
     methods: {
       onResize() {
-        this.windowWidth = window.innerWidth;
-        this.windowHeight = window.innerHeight;
+        this.windowWidth = window.visualViewport.width;
       }
     }
   }
