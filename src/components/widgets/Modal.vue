@@ -5,8 +5,8 @@
         <div class="overlay" @click.self="closeModal()">
           <div class="modal">
             <template v-if="((content.imageSources ? content.imageSources.length : 0) + (content.videoSources ? content.videoSources.length : 0)) > 1">
-              <label class="carousel__control carousel__control--backward" @click="decrement()" />
-              <label class="carousel__control carousel__control--forward" @click="increment()" />
+              <label class="carousel__control carousel__control--backward" @click="selectedIndex--" />
+              <label class="carousel__control carousel__control--forward" @click="selectedIndex++" />
             </template>
             <vimeo-player v-if="displayObject.type === 'video'" :video-id="displayObject.source"
                           :player-width="playerWidth" :player-height="playerHeight"
@@ -29,8 +29,6 @@
 </template>
 
 <script>
-  let w = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
-
   export default {
     name: "Modal",
     props: {
@@ -53,11 +51,21 @@
     data() {
       return {
         selectedIndex: 0,
-        playerWidth: 0.8 * w,
-        playerHeight: 0.45 * w,
+        playerWidth: 0.8 * window.innerWidth,
+        playerHeight: 0.45 * window.innerWidth,
         options: {},
         loop: true,
         autoplay: false
+      }
+    },
+    watch: {
+      selectedIndex: function (newVal) {
+        const combinedLength = (this.content.videoSources ? this.content.videoSources.length : 0) + (this.content.imageSources ? this.content.imageSources.length : 0);
+        if (newVal === -1) {
+          this.selectedIndex = combinedLength - 1;
+        } else if (newVal === combinedLength) {
+          this.selectedIndex = 0;
+        }
       }
     },
     computed: {
@@ -92,41 +100,23 @@
       window.removeEventListener('keydown', this.handleKey);
     },
     methods: {
-      increment() {
-        if (!this.showModal) { return }
-
-        if (this.selectedIndex === ((this.content.videoSources ? this.content.videoSources.length : 0) + (this.content.imageSources ? this.content.imageSources.length : 0) - 1)) {
-          this.selectedIndex = 0;
-        } else {
-          this.selectedIndex++;
-        }
-      },
-      decrement() {
-        if (!this.showModal) { return }
-
-        if (this.selectedIndex === 0) {
-          this.selectedIndex = ((this.content.videoSources ? this.content.videoSources.length : 0) + (this.content.imageSources ? this.content.imageSources.length : 0) - 1);
-        } else {
-          this.selectedIndex--;
-        }
-      },
       handleSwipe(direction) {
         switch (direction) {
           case "left":
-            this.increment();
+            this.selectedIndex++;
             break;
           case "right":
-            this.decrement();
+            this.selectedIndex--;
             break;
         }
       },
       handleKey(event) {
         switch (event.code) {
           case "ArrowLeft":
-            this.decrement();
+            this.selectedIndex--;
             break;
           case "ArrowRight":
-            this.increment();
+            this.selectedIndex++;
             break;
           case "Escape":
             this.closeModal();
@@ -161,7 +151,7 @@
 <style scoped>
   img {
     display: table-cell;
-    max-width: calc(100vw - 250px);
+    max-width: calc(100vw - 150px);
     max-height: 75vh;
     object-fit: contain;
   }
@@ -170,12 +160,12 @@
     display: table-caption;
     caption-side: bottom;
     background-color: #fff;
-    padding: 0 16px;
+    padding: 0 16px 16px;
     text-align: center;
   }
 
   .modal {
-    max-width: calc(100vw - 250px);
+    max-width: calc(100vw - 150px);
     max-height: 95vh;
     display: table;
     margin: 0 auto;
