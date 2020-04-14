@@ -270,8 +270,7 @@ const software = [
   {
     date: "3-20-2020",
     medium: "Swift",
-    description: "Contributions to the Toast Takeout iOS app, including contactless delivery, curbside pickup, " +
-      "confirmation screen order map, & delivery feedback.",
+    description: "Contributions to the Toast Takeout iOS app, including contactless delivery, curbside pickup, confirmation screen order map, and delivery feedback.",
     previewSource: "2020-03-20 Toast Takeout Preview.png",
     imageSources: ["2020-03-20 Toast Takeout (1).png", "2020-03-20 Toast Takeout (2).png",
       "2020-03-20 Toast Takeout (3).png", "2020-03-20 Toast Takeout (4).png", "2020-03-20 Toast Takeout (5).png"]
@@ -317,13 +316,6 @@ const software = [
     previewSource: "2018-12-13 Animator Preview.png",
     imageSources: ["2018-12-13 Animator.png"],
     github: "animator"
-  },
-  {
-    date: "6-3-2018",
-    medium: "Unity",
-    description: "Virtual Reality game which uses gaze direction to solve basic puzzles.",
-    previewSource: "2018-06-03 Find Drake Preview.png",
-    imageSources: ["2018-06-03 Find Drake.png"]
   },
   {
     date: "3-27-2018",
