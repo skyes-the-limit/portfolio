@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about-container">
     <img :src="require('@/assets/img/about-profile.png')">
     <div class="text">
       <p>I am a Boston based artist and software devleoper currently studying at Northeastern University. 
@@ -22,26 +22,52 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  .about-container {
+    height: calc(100vh - 56px);
+    padding: 0;
+  }
+
   .text {
-    margin: 0 auto;
+    position: absolute;
+    top: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: calc(max(50%, 600px));
-    padding: 24px;
+    max-width: 575px;
+    padding: 16px;
+    margin: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   
   img {
     width: 100vw;
-    height: 60vh;
+    height: calc(100vh - 56px);
     object-fit: cover;
     object-position: right top;
     opacity: .9;
   }
 
-  @media only screen and (max-height: 811px) {
-    img {
-      height: 40vh
+  @media only screen and (max-height: 665px) {
+    .text {
+      top: 40%;
+    }
+  }
+
+  @media only screen and (max-height: 810px) {
+    .text {
+      top: 55%;
+    }
+  }
+
+  @media only screen and (min-width: 750px) {
+    .text {
+      left: 10%;
+    }
+  }
+
+  @media only screen and (min-width: 1050px) {
+    .text {
+      left: 20%;
     }
   }
 </style>
