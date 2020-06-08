@@ -39,6 +39,9 @@
         <v-list-item>
           <router-link :to="{ name: 'Software' }">Software</router-link>
         </v-list-item>
+        <v-list-item>
+          <router-link :to="{ name: 'About' }">About</router-link>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
   </div>
