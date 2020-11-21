@@ -17,15 +17,15 @@ export default new VueRouter({
       name: 'Home',
       component: Home,
       meta: {
-        title: 'Arielle Bishop - Portfolio',
+        title: 'Skye Bishop - Portfolio',
         metaTags: [
           {
             name: 'description',
-            content: 'Portfolio of Arielle Bishop\'s previous work.'
+            content: 'Portfolio of Skye Bishop\'s previous work.'
           },
           {
             property: 'og:description',
-            content: 'Portfolio of Arielle Bishop\'s previous work.'
+            content: 'Portfolio of Skye Bishop\'s previous work.'
           }
         ]
       }
@@ -36,15 +36,15 @@ export default new VueRouter({
       component: ContentPage,
       props: { cards: store.getters.illustration },
       meta: {
-        title: 'Arielle Bishop - Illustration',
+        title: 'Skye Bishop - Illustration',
         metaTags: [
           {
             name: 'description',
-            content: 'Collection of Arielle Bishop\'s illustration portfolio work.'
+            content: 'Collection of Skye Bishop\'s illustration portfolio work.'
           },
           {
             property: 'og:description',
-            content: 'Collection of Arielle Bishop\'s illustration portfolio work.'
+            content: 'Collection of Skye Bishop\'s illustration portfolio work.'
           }
         ]
       }
@@ -55,15 +55,15 @@ export default new VueRouter({
       component: ContentPage,
       props: { cards: store.getters.cgi },
       meta: {
-        title: 'Arielle Bishop - CGI',
+        title: 'Skye Bishop - CGI',
         metaTags: [
           {
             name: 'description',
-            content: 'Collection of Arielle Bishop\'s 3D modeling portfolio work.'
+            content: 'Collection of Skye Bishop\'s 3D modeling portfolio work.'
           },
           {
             property: 'og:description',
-            content: 'Collection of Arielle Bishop\'s 3D modeling portfolio work.'
+            content: 'Collection of Skye Bishop\'s 3D modeling portfolio work.'
           }
         ]
       }
@@ -74,15 +74,15 @@ export default new VueRouter({
       component: ContentPage,
       props: { cards: store.getters.video },
       meta: {
-        title: 'Arielle Bishop - Video',
+        title: 'Skye Bishop - Video',
         metaTags: [
           {
             name: 'description',
-            content: 'Collection of Arielle Bishop\'s video-based portfolio work.'
+            content: 'Collection of Skye Bishop\'s video-based portfolio work.'
           },
           {
             property: 'og:description',
-            content: 'Collection of Arielle Bishop\'s video-based portfolio work.'
+            content: 'Collection of Skye Bishop\'s video-based portfolio work.'
           }
         ]
       }
@@ -93,15 +93,15 @@ export default new VueRouter({
       component: ContentPage,
       props: { cards: store.getters.software },
       meta: {
-        title: 'Arielle Bishop - Software',
+        title: 'Skye Bishop - Software',
         metaTags: [
           {
             name: 'description',
-            content: 'Collection of Arielle Bishop\'s software portfolio work.'
+            content: 'Collection of Skye Bishop\'s software portfolio work.'
           },
           {
             property: 'og:description',
-            content: 'Collection of Arielle Bishop\'s software portfolio work.'
+            content: 'Collection of Skye Bishop\'s software portfolio work.'
           }
         ]
       }
@@ -111,15 +111,15 @@ export default new VueRouter({
       name: 'About',
       component: About,
       meta: {
-        title: 'Arielle Bishop - About',
+        title: 'Skye Bishop - About',
         metaTags: [
           {
             name: 'description',
-            content: 'About the site developer Arielle Bishop and her career.'
+            content: 'About the site developer Skye Bishop and their career.'
           },
           {
             property: 'og:description',
-            content: 'About the site developer Arielle Bishop and her career.'
+            content: 'About the site developer Skye Bishop and their career.'
           }
         ]
       }

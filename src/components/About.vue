@@ -9,7 +9,7 @@
       <a
         target="_blank"
         rel="noopener noreferrer"
-        :href="require('@/assets/doc/Arielle_Bishop_Resume.pdf')"
+        :href="require('@/assets/doc/Skye_Bishop_Resume.pdf')"
       >Resume</a>
     </div>
   </div>
