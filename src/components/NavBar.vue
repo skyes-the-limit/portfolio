@@ -5,10 +5,9 @@
         <router-link :to="{ name: 'Home' }">Skye Bishop</router-link>
       </span>
       <span>
-        <router-link :to="{ name: 'Illustration' }">Illustration</router-link>
-        <router-link :to="{ name: 'CGI' }">CGI</router-link>
-        <router-link :to="{ name: 'Video' }">Video</router-link>
         <router-link :to="{ name: 'Software' }">Software</router-link>
+        <router-link :to="{ name: 'CGI' }">CGI</router-link>
+        <router-link :to="{ name: 'TechArt' }">Technical Art</router-link>
       </span>
     </span>
     <span>
@@ -28,16 +27,13 @@
           <router-link :to="{ name: 'Home' }">Home</router-link>
         </v-list-item>
         <v-list-item>
-          <router-link :to="{ name: 'Illustration' }">Illustration</router-link>
+          <router-link :to="{ name: 'Software' }">Software</router-link>
         </v-list-item>
         <v-list-item>
           <router-link :to="{ name: 'CGI' }">CGI</router-link>
         </v-list-item>
         <v-list-item>
-          <router-link :to="{ name: 'Video' }">Video</router-link>
-        </v-list-item>
-        <v-list-item>
-          <router-link :to="{ name: 'Software' }">Software</router-link>
+          <router-link :to="{ name: 'TechArt' }">Technical Art</router-link>
         </v-list-item>
         <v-list-item>
           <router-link :to="{ name: 'About' }">About</router-link>
@@ -53,7 +49,7 @@ export default {
   data() {
     return {
       windowWidth: 0,
-      drawer: false
+      drawer: false,
     };
   },
   created() {
@@ -68,8 +64,8 @@ export default {
   methods: {
     onResize() {
       this.windowWidth = window.visualViewport.width;
-    }
-  }
+    },
+  },
 };
 </script>
 

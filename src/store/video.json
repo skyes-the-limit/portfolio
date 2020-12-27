@@ -1,0 +1,31 @@
+{
+    "list": [
+        {
+            "date": "5-23-2018",
+            "medium": "Premiere",
+            "description": "Short interview of a Toronto local named James.",
+            "previewSource": "2018-05-23 Profile Preview.png",
+            "videoSources": [
+                "353296500"
+            ]
+        },
+        {
+            "date": "4-23-2018",
+            "medium": "Premiere",
+            "description": "An impressionistic recollection of a season of dance.",
+            "previewSource": "2018-04-23 Sum Preview.png",
+            "videoSources": [
+                "352082744"
+            ]
+        },
+        {
+            "date": "2-26-2018",
+            "medium": "Premiere",
+            "description": "Short study on performance.",
+            "previewSource": "2018-02-26 Twister Preview.png",
+            "videoSources": [
+                "352082020"
+            ]
+        }
+    ]
+}

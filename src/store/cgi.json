@@ -1,0 +1,78 @@
+{
+    "list": [
+        {
+            "date": "12-12-2019",
+            "medium": "Maya",
+            "description": "Self portrait model.",
+            "previewSource": "2019-12-12 Self Portrait Preview.png",
+            "imageSources": [
+                "2019-12-12 Self Portrait (1).gif",
+                "2019-12-12 Self Portrait (2).gif"
+            ]
+        },
+        {
+            "date": "11-5-2019",
+            "medium": "Maya",
+            "description": "Digital recreation of a small interior space.",
+            "previewSource": "2019-11-05 Interior Preview.png",
+            "imageSources": [
+                "2019-11-05 Interior (1).png",
+                "2019-11-05 Interior (2).png"
+            ]
+        },
+        {
+            "date": "12-14-2018",
+            "medium": "Maya",
+            "description": "Talent show act of an animated and rigged character.",
+            "previewSource": "2018-12-14 Talent Show Preview.png",
+            "videoSources": [
+                "352084087"
+            ]
+        },
+        {
+            "date": "3-16-2017",
+            "medium": "3DS Max",
+            "description": "Experiment with rain particle generator.",
+            "previewSource": "2017-03-16 Rain Preview.png",
+            "videoSources": [
+                "352081875"
+            ]
+        },
+        {
+            "date": "2-15-2017",
+            "medium": "3DS Max",
+            "description": "Experiment with fire particle effect.",
+            "previewSource": "2017-02-15 Campfire Preview.png",
+            "imageSources": [
+                "2017-02-15 Campfire.jpg"
+            ]
+        },
+        {
+            "date": "1-13-2017",
+            "medium": "3DS Max",
+            "description": "First animation on a rigged character.",
+            "previewSource": "2017-01-13 Captain Chunk Preview.png",
+            "videoSources": [
+                "353296008"
+            ]
+        },
+        {
+            "date": "11-18-2016",
+            "medium": "3DS Max",
+            "description": "Character model based on Castle Crashers.",
+            "previewSource": "2016-11-18 Castle Crasher Preview.png",
+            "videoSources": [
+                "353296476"
+            ]
+        },
+        {
+            "date": "10-7-2016",
+            "medium": "3DS Max",
+            "description": "Simple lighting & texturing demo.",
+            "previewSource": "2016-10-07 Lamp Preview.png",
+            "imageSources": [
+                "2016-10-07 Lamp.jpg"
+            ]
+        }
+    ]
+}

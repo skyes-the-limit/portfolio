@@ -1,0 +1,23 @@
+{
+    "list": [
+        {
+            "date": "9-25-2018",
+            "medium": "Whiteboard & Premiere",
+            "description": "A variant on the 'chalk talk' style of stop motion.",
+            "previewSource": "2018-09-25 Chalk Talk Preview.png",
+            "videoSources": [
+                "352083851"
+            ],
+            "collab": "Ryan Nuz & Raveena Jain"
+        },
+        {
+            "date": "9-19-2018",
+            "medium": "Clay & Premiere",
+            "description": "Claymation conceptualized by visualizing a predetermined cartoon soundtrack.",
+            "previewSource": "2018-09-19 Claymation Preview.png",
+            "videoSources": [
+                "352083588"
+            ]
+        }
+    ]
+}

@@ -1,38 +1,29 @@
 <template>
-  <carousel-full-screen :slides="carouselProps" />
+  <div v-if="newLayoutEnabled">
+    <featured />
+    <main-categories />
+    <additional-work />
+  </div>
+  <carousel-full-screen v-else :slides="carouselProps" />
 </template>
 
 <script>
-import CarouselFullScreen from '@/components/widgets/CarouselFullScreen.vue'
+import Featured from '@/components/Featured.vue';
+import MainCategories from '@/components/MainCategories.vue';
+import AdditionalWork from '@/components/AdditionalWork.vue';
+import CarouselFullScreen from "@/components/widgets/CarouselFullScreen.vue";
+import store from '@/store';
 
-let illustration = {
-  page: 'Illustration',
-  title: "Illustration",
-  imageSrc: 'cover-illustration.png'
-};
-let cgi = {
-  page: 'CGI',
-  title: "CGI",
-  imageSrc: 'cover-cgi.png'
-};
-let video = {
-  page: 'Video',
-  title: "Video",
-  imageSrc: 'cover-video.png'
-};
-let software = {
-  page: 'Software',
-  title: "Software",
-  imageSrc: 'cover-software.png'
-};
+const newLayoutEnabled = store.getters.newLayoutEnabled
+const carouselProps = store.getters.carouselProps
 
 export default {
-  name: 'Home',
-  components: { CarouselFullScreen },
+  name: "Home",
+  components: { Featured, MainCategories, AdditionalWork, CarouselFullScreen },
   data() {
     return {
-      carouselProps: [illustration, cgi, video, software]
-    }
-  }
-}
+      carouselProps, newLayoutEnabled
+    };
+  },
+};
 </script>

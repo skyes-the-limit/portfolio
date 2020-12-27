@@ -1,0 +1,33 @@
+{
+    "list": [
+        {
+            "date": "11-7-2018",
+            "medium": "Photoshop & AfterEffects",
+            "description": "An educational video on different culture's 'Halloween-esque' holidays.",
+            "previewSource": "2018-11-07 Edutainment Preview.png",
+            "videoSources": [
+                "354709668"
+            ],
+            "collab": "Ryan Nuz & Raveena Jain"
+        },
+        {
+            "date": "3-20-2018",
+            "medium": "AfterEffects",
+            "description": "Lyric video focusing on transforming audio into visual representations.",
+            "previewSource": "2018-03-20 Lyrics.png",
+            "videoSources": [
+                "352082622"
+            ]
+        },
+        {
+            "date": "3-13-2018",
+            "medium": "Photoshop & Premiere",
+            "description": "Sci-fi animatic about tense family relations.",
+            "previewSource": "2018-03-13 Animatic Preview.png",
+            "videoSources": [
+                "352082394"
+            ],
+            "collab": "Sophia Cheon"
+        }
+    ]
+}

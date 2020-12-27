@@ -1,0 +1,112 @@
+{
+    "list": [
+        {
+            "date": "11-15-2019",
+            "medium": "Photoshop",
+            "description": "Series of speed paint portraits based on references from /r/RedditGetsDrawn.",
+            "previewSource": "2019-11-15 Process Portrait Preview.png",
+            "imageSources": [
+                "2019-11-15 Process Portrait (1).png",
+                "2019-11-15 Process Portrait (2).png",
+                "2019-11-15 Process Portrait (3).png",
+                "2019-11-15 Process Portrait (4).png",
+                "2019-11-15 Process Portrait (5).png",
+                "2019-11-15 Process Portrait (6).png",
+                "2019-11-15 Process Portrait (7).png",
+                "2019-11-15 Process Portrait (8).png",
+                "2019-11-15 Process Portrait (9).png",
+                "2019-11-15 Process Portrait (10).png",
+                "2019-11-15 Process Portrait (11).png",
+                "2019-11-15 Process Portrait (12).png",
+                "2019-11-15 Process Portrait (13).png",
+                "2019-11-15 Process Portrait (14).png"
+            ]
+        },
+        {
+            "date": "7-22-2019",
+            "medium": "Screenprinted Fabric",
+            "description": "Exploration of tagging and graffiti using publicly sited textiles.",
+            "previewSource": "2019-07-22 Screenprint Preview.png",
+            "imageSources": [
+                "2019-07-22 Screenprint (1).jpg",
+                "2019-07-22 Screenprint (2).jpg",
+                "2019-07-22 Screenprint (3).jpg",
+                "2019-07-22 Screenprint (4).jpg",
+                "2019-07-22 Screenprint (5).jpg",
+                "2019-07-22 Screenprint (6).jpg"
+            ]
+        },
+        {
+            "date": "11-20-2017",
+            "medium": "Illustrator",
+            "description": "Patterns generated from swatches of a plant drawing.",
+            "previewSource": "2017-11-20 Patterns Preview.png",
+            "imageSources": [
+                "2017-11-20 Patterns.png"
+            ]
+        },
+        {
+            "date": "11-2-2017",
+            "medium": "Photoshop",
+            "description": "Collage experiment with texture.",
+            "previewSource": "2017-11-02 Texture Preview.png",
+            "imageSources": [
+                "2017-11-02 Texture.png"
+            ]
+        },
+        {
+            "date": "10-30-2017",
+            "medium": "Photoshop",
+            "description": "Study on different modes of drawing.",
+            "previewSource": "2017-10-30 Modes Preview.png",
+            "imageSources": [
+                "2017-10-30 Modes.png"
+            ]
+        },
+        {
+            "date": "10-5-2017",
+            "medium": "Illustrator",
+            "description": "Portrait of Ruby Rose.",
+            "previewSource": "2017-10-05 Ruby Rose Preview.png",
+            "imageSources": [
+                "2017-10-05 Ruby Rose.png"
+            ]
+        },
+        {
+            "date": "9-25-2017",
+            "medium": "Illustrator",
+            "description": "Composition of only squares.",
+            "previewSource": "2017-09-25 Squares Preview.png",
+            "imageSources": [
+                "2017-09-25 Squares.png"
+            ]
+        },
+        {
+            "date": "9-21-2017",
+            "medium": "Illustrator",
+            "description": "Study on geometric minimalism.",
+            "previewSource": "2017-09-21 Prints Preview.png",
+            "imageSources": [
+                "2017-09-21 Prints.png"
+            ]
+        },
+        {
+            "date": "4-14-2016",
+            "medium": "Photoshop",
+            "description": "Drawing inspired by Bioware role playing video games.",
+            "previewSource": "2016-04-14 Tarot Preview.png",
+            "imageSources": [
+                "2016-04-14 Tarot.jpg"
+            ]
+        },
+        {
+            "date": "3-22-2016",
+            "medium": "Graphite",
+            "description": "Portrait of Richard Dawkins.",
+            "previewSource": "2016-03-22 Dawkins Preview.png",
+            "imageSources": [
+                "2016-03-22 Dawkins.png"
+            ]
+        }
+    ]
+}
