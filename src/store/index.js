@@ -9,8 +9,7 @@ import * as stopMotion from './stopMotion.json'
 import * as technicalArt from './technicalArt.json'
 import * as video from './video.json'
 
-Vue.use(Vuex);
-
+//   All json content should be formatted as follows:
 //   String date                       (creation date of the piece in format MM-DD-YYYY)
 //   String medium                     (medium or programs used to create the piece)
 //   String description                (a description of the piece)
@@ -20,43 +19,34 @@ Vue.use(Vuex);
 //   String collab          [OPTIONAL] (list of collaborators)
 //   String github          [OPTIONAL] (end of link to github repo/folder)
 
-const newLayoutEnabled = false;
+Vue.use(Vuex);
 
 const featuredWork = [
   {
-    "date": "11-5-2019",
-    "medium": "Maya",
-    "description": "Digital recreation of a small interior space.",
-    "previewSource": "2019-11-05 Interior Preview.png",
+    "title": "Capstone Project",
+    "description": "This is a long and detailed description of a project that I likely spent months of my life on. I was dedicated. It's worth explaining exactly why it's just so cool that I made this. In fact, it's even possible that the description go on for multiple lines.",
     "imageSources": [
       "2019-11-05 Interior (1).png",
       "2019-11-05 Interior (2).png"
+    ],
+    "videoSources": [
+      "352084087"
     ]
+  },
+  {
+    "title": "Identical (but scrollable) Project",
+    "description": "Effort was made and this was probable inspired by something. Modeled in Maya, simulated in Houdini then ported into Unreal Engine.",
+    "imageSources": [
+      "2019-11-05 Interior (1).png",
+      "2019-11-05 Interior (2).png"
+    ],
+    "videoSources": [
+      "352084087"
+    ],
+    "collab": "likely nobody",
+    "github": "you-in"
   }
 ]
-
-const carouselProps = [
-  {
-    page: "Illustration",
-    title: "Illustration",
-    imageSrc: "cover-illustration.png",
-  },
-  {
-    page: "CGI",
-    title: "CGI",
-    imageSrc: "cover-cgi.png",
-  },
-  {
-    page: "Video",
-    title: "Video",
-    imageSrc: "cover-video.png",
-  },
-  {
-    page: "Software",
-    title: "Software",
-    imageSrc: "cover-software.png",
-  },
-];
 
 const mainCategories = [
   {
@@ -65,14 +55,16 @@ const mainCategories = [
     imageSrc: "cover-software.png",
   },
   {
-    title: "3D Modeling & Animation",
+    title: "3D Modeling + Animation",
     page: "CGI",
-    imageSrc: "cover-3d.png",
+    imageSrc: "cover-software.png",
+    // imageSrc: "cover-3d.png",
   },
   {
     title: "Technical Art",
     page: "tech-art",
-    imageSrc: "cover-techart.png",
+    imageSrc: "cover-software.png",
+    // imageSrc: "cover-techart.png",
   }
 ];
 
@@ -101,9 +93,7 @@ const subCategories = [
 
 export default new Vuex.Store({
   state: {
-    newLayoutEnabled: newLayoutEnabled,
     featuredWork: featuredWork,
-    carouselProps: carouselProps,
     mainCategories: mainCategories,
     subCategories: subCategories,
     cgi: cgi.list,
@@ -115,9 +105,7 @@ export default new Vuex.Store({
     video: video.list
   },
   getters: {
-    newLayoutEnabled: state => state.newLayoutEnabled,
     featuredWork: state => state.featuredWork,
-    carouselProps: state => state.carouselProps,
     mainCategories: state => state.mainCategories,
     subCategories: state => state.subCategories,
     cgi: state => state.cgi,

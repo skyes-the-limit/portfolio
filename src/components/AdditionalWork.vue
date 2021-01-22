@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Additional Work</h1>
+    <h2>Additional Work</h2>
   </div>
 </template>
 
@@ -15,3 +15,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+</style>

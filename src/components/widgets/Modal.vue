@@ -4,6 +4,7 @@
       <div v-if="showModal" v-touch:swipe="handleSwipe">
         <div class="overlay" @click.self="closeModal()">
           <div class="modal">
+            <!-- Display carousel controls only if there is more than one content item -->
             <template
               v-if="
                 (content.imageSources ? content.imageSources.length : 0) +
@@ -20,12 +21,15 @@
                 @click="selectedIndex++"
               />
             </template>
+            
+            <!-- X in top right corner to exit modal -->
             <svg @click.self="closeModal()" viewBox="0 0 24 24">
               <path
                 fill="#303030"
                 d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
               />
             </svg>
+
             <vimeo-player
               v-if="displayObject.type === 'video'"
               :video-id="displayObject.source"
@@ -39,6 +43,7 @@
               :src="displayObject.source"
               :alt="content.description"
             />
+
             <div class="annotations">
               <p>{{ content.description }}</p>
               <p v-if="content.collab">
@@ -46,7 +51,7 @@
               </p>
               <a
                 v-if="content.github"
-                :href="'https://github.com/ArielleBishop/' + content.github"
+                :href="'https://github.com/skyes-the-limit/' + content.github"
                 target="blank"
                 rel="noopener noreferrer"
                 >Github</a
