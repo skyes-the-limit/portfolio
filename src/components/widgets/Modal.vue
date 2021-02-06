@@ -19,7 +19,7 @@
               <p>{{ content.description }}</p>
               <p v-if="content.collab">Made in collaboration with {{ content.collab }}.</p>
               <a v-if="content.github"
-                :href="'https://github.com/ArielleBishop/' + content.github"
+                :href="'https://github.com/skyes-the-limit/' + content.github"
                 target="blank"
                 rel="noopener noreferrer"
               >Github</a>
