@@ -8,11 +8,8 @@
     <div class="preview-card">
       <router-link :to="{ name: content.page }">
         <h4>{{ content.title }}</h4>
-          <img
-          :src="imageSrc"
-          :alt="content.description"
-          />
-        </router-link>
+        <img :src="imageSrc" :alt="content.description" />
+      </router-link>
     </div>
   </v-lazy>
 </template>
@@ -20,7 +17,7 @@
 <script>
 export default {
   name: "PreviewCard",
-  components: { },
+  components: {},
   props: {
     content: {
       type: Object,
@@ -28,7 +25,7 @@ export default {
         return {
           title: "",
           page: "",
-          imageSrc: ""
+          imageSrc: "",
         };
       },
     },
@@ -74,43 +71,12 @@ img:hover {
   justify-content: space-between;
 }
 
-/* @media only screen and (min-width: 0px) {
-  img {
-    width: 90vw;
-    height: 90vw;
-  }
-  .preview-card {
-    width: 90vw;
-  }
+img {
+  width: calc(88vh / 3);
+  height: calc(88vh / 3);
 }
 
-@media only screen and (min-width: 600px) {
-  img {
-    width: 45vw;
-    height: 45vw;
-  }
-  .preview-card {
-    width: 45vw;
-  }
+.preview-card {
+  width: calc(88vh / 3);
 }
-
-@media only screen and (min-width: 850px) {
-  img {
-    width: 30vw;
-    height: 30vw;
-  }
-  .preview-card {
-    width: 30vw;
-  }
-} */
-
-/* @media only screen and (min-width: 1200px) { */
-  img {
-    width: calc(88vw / 3);
-    height: calc(88vw / 3);
-  }
-  .preview-card {
-    width: calc(88vw / 3);
-  }
-/* } */
 </style>

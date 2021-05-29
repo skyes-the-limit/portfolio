@@ -1,13 +1,6 @@
 <template>
-  <div>
-    <h2>Main Categories</h2>
-    <div class="content-container">
-      <page-preview
-        v-for="(page, index) in pages"
-        :key="index"
-        :content="page"
-      />
-    </div>
+  <div class="content-container">
+    <page-preview v-for="(page, index) in pages" :key="index" :content="page" />
   </div>
 </template>
 

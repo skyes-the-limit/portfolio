@@ -67,11 +67,8 @@
 
 <script>
 export default {
-  name: "Modal",
+  name: "FeaturedWork",
   props: {
-    showModal: {
-      type: Boolean,
-    },
     content: {
       type: Object,
       default: function () {
@@ -91,6 +88,14 @@ export default {
       options: {},
       loop: true,
       autoplay: false,
+      playerWidth: Math.min(
+        0.7 * 0.45 * window.visualViewport.width,
+        window.visualViewport.width - 150
+      ),
+      playerHeight: this.playerHeight = Math.min(
+        0.7 * 0.45 * window.visualViewport.width,
+        window.visualViewport.width - 150
+      )
     };
   },
   watch: {
@@ -133,30 +138,14 @@ export default {
       }
       return null;
     },
-    playerWidth() {
-      console.log('playerWidth updating')
-      return Math.min(
-        0.8 * window.visualViewport.width,
-        window.visualViewport.width - 150
-      );
-    },
-    playerHeight() {
-      console.log('playerHeight updating')
-      return Math.min(
-        0.45 * window.visualViewport.width,
-        window.visualViewport.width - 150
-      );
-    },
   },
   created() {
     this.$nextTick(() => {
       window.addEventListener("keydown", this.handleKey);
-      window.addEventListener("resize", this.updatePlayerSize);
     });
   },
   destroyed() {
     window.removeEventListener("keydown", this.handleKey);
-    window.addEventListener("resize", this.updatePlayerSize);
   },
   methods: {
     handleSwipe(direction) {
@@ -177,27 +166,10 @@ export default {
         case "ArrowRight":
           this.selectedIndex++;
           break;
-        case "Escape":
-          this.closeModal();
-          break;
       }
-    },
-    updatePlayerSize(event) {
-      // console.log(this);
-      // this.playerWidth = Math.min(
-      //   0.8 * window.visualViewport.width,
-      //   window.visualViewport.width - 150
-      // );
-      // this.playerHeight = Math.min(
-      //   0.45 * window.visualViewport.width,
-      //   window.visualViewport.width - 150
-      // );
     },
     imageSrc(source) {
       return require("@/assets/img/" + source);
-    },
-    closeModal() {
-      this.$emit("update:show-modal", false);
     },
     onReady() {
       this.playerReady = true;
@@ -221,7 +193,7 @@ export default {
 <style scoped>
 img {
   display: table-cell;
-  max-width: calc(100vw - 150px);
+  max-width: calc(70vw - 150px);
   /* max-height: calc(min(0.45 * 100vw, 100vw - 150)); */
   /* return Math.min(
         0.45 * window.visualViewport.width,
@@ -247,7 +219,7 @@ img {
 }
 
 .featured-work h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .main-content {

@@ -29,12 +29,12 @@ const featuredWork = [
       "2019-11-05 Interior (1).png",
       "2019-11-05 Interior (2).png"
     ],
-    "videoSources": [
-      "352084087"
-    ]
+    // "videoSources": [
+    //   "352084087"
+    // ]
   },
   {
-    "title": "Identical (but scrollable) Project",
+    "title": "Identical Project",
     "description": "Effort was made and this was probable inspired by something. Modeled in Maya, simulated in Houdini then ported into Unreal Engine.",
     "imageSources": [
       "2019-11-05 Interior (1).png",

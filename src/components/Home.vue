@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="showFeatured">
+    <div v-if="showFeatured" class="featuredLayout">
       <featured />
       <main-categories />
     </div>
@@ -25,3 +25,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.featuredLayout {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+}
+
+.featuredLayout:nth-child(0) {
+  width: 70%;
+}
+
+.featuredLayout:nth-child(1) {
+  width: 30%;
+}
+
+</style>
